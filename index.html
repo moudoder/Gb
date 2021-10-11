@@ -1,0 +1,2399 @@
+<!DOCTYPE html>
+<html lang="RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Project name</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Описание проекта">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <!-- Кастомые анимации-->
+    <link rel="stylesheet" href="./css/animation.css">
+    <!-- / Кастомые анимации-->
+    <link rel="stylesheet" href="./css/lightgallery.min.css">
+    <link rel="stylesheet" href="./css/front.css">
+  </head>
+  <body>
+    <div class="modal-equipment">
+      <div class="modal-equipment-inner">
+        <h2 class="modal-equipment__title">
+          Хотите получить полный список <br>
+          нашего оборудования?
+        </h2>
+        <div class="modal-equipment-wrapper">
+          <input type="text" class="modal-equipment__input" placeholder="Введите свой телеграм или почту">
+          <button class="modal-equipment__btn">Получить список</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-calculation">
+      <div class="modal-calculation-block">
+        <h2 class="modal-calculation__title">
+          Рассчитать стоимость работы
+        </h2>
+        <h3 class="modal-calculation__subtext">
+          Кто вы?
+        </h3>
+        <div class="modal-calculation-row">
+          <div class="calculation-block calculation-block-active calculation-block__left">
+            <img src="img/art-1.png" alt="" class="calculation-block__img">
+            <h4 class="calculation-block__name">
+              Музыкальный артист
+            </h4>
+            <p class="calculation-block__text">
+              У вас есть собственный трек который нужно
+              записать или сделать аранжировку
+            </p>
+          </div>
+          <div class="calculation-block">
+            <img src="img/art-2.png" alt="" class="calculation-block__img">
+            <h4 class="calculation-block__name">
+              Записать поздравление
+            </h4>
+            <p class="calculation-block__text">
+              У вас возможно мероприятие или вы хотите
+              сделать подарок своему близкому человеку
+            </p>
+          </div>
+        </div>
+        <a href="#" class="modal-calculation__btn">
+          Рассчитать стоимость
+        </a>
+      </div>
+    </div>
+    <header class="header" data-aos="fade-down" data-aos-duration="800">
+      <div class="container">
+        <div class="wrap header__wrap">
+          <!-- Логотип--><a class="header__logo" href="#"><img class="header__logo-img" src="./img/logo.png" alt="Logo"></a>
+          <!-- Навигация-->
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-list-item"><a class="header__nav-list-link" href="#">Наши работы</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-list-link" href="#">Фото галерея</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-list-link" href="#">Тарифы</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-list-link" href="#">Отзывы</a></li>
+            </ul>
+          </nav>
+          <!-- Выпадающий список региона-->
+          <!--.header__region-->
+          <!--    img(src="./img/location.png" alt="").header__region-icon-->
+          <!--    .custom-select.header__region-select-->
+          <!--        select-->
+          <!--            option Город-->
+          <!--            option Москва-->
+          <!--            option Что-то еще-->
+          <!-- Элемент контактов-->
+          <div class="header__contacts"><img class="header__contacts-icon" src="./img/phone.png" alt="Phone">
+            <div class="header__contacts-inner"><a class="header__contacts-phone" href="tel:+79999999999" rel="nofollow">+7 (999) 999-99-99</a>
+              <div class="header__contacts-text">Ежедневно с 8:00 до 22:00</div>
+            </div>
+          </div>
+          <!-- Бургер для меню--><a class="header__burger"><span></span><span></span><span></span></a>
+        </div>
+      </div>
+    </header>
+    <!-- Мобильное меню-->
+    <div class="header__nav-mobile">
+      <div class="container">
+        <div class="wrap">
+          <div class="header__nav-mobile-top">
+            <!-- Закрывающий элемент-->
+            <div class="close header__nav-mobile-close"><span></span><span></span></div>
+            <!-- Логотип--><a class="header__logo" href="#"><img class="header__logo-img" src="./img/logo.png" alt="Logo"></a>
+          </div>
+          <!-- Мобильная навигация-->
+          <nav>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Кейсы</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Первый экарн-->
+    <div class="first-screen">
+      <div class="first-screen__bg">
+        <!-- source(srcset='img/first-screen-background.webp' type='image/webp')-->
+        <!--img(src='./img/first-screen-background.png' alt='Бэграунд' title='Бэграунд').first-screen__bg-image-->
+      </div>
+      <div class="container first-screen__container" data-aos="zoom-in" data-aos-duration="800">
+        <h1 class="first-screen__title">Вперед в топ-чарты</h1>
+        <h2 class="first-screen__descr">Песня на USB флешку в тот же день</h2>
+        <ul class="first-screen__list">
+          <li class="first-screen__list-elem">
+            <p class="first-screen__list-text">Студия на метро Павелецкой</p>
+          </li>
+          <li class="first-screen__list-elem">
+            <p class="first-screen__list-text">Готовый трек от 2 500 руб</p>
+          </li>
+          <li class="first-screen__list-elem">
+            <p class="first-screen__list-text">Наши работы попадают в чарты</p>
+          </li>
+          <li class="first-screen__list-elem">
+            <p class="first-screen__list-text">Самое топовое оборудование</p>
+          </li>
+        </ul>
+        <div class="btn--two-layer first-screen__button"><a class="btn btn--base btn--modal btn--modal-order first-screen__button-inner" href="#">Оставить заявку<span class="btn__accent"></span></a></div>
+        <div class="first-screen__hero">
+          <picture class="first-screen__hero-picture">
+            <!-- source(srcset='./img/front-page/first-screen/hero.webp' type='image/webp')--><img src="./img/vocal.png" alt="Vocal" title="Vocal">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="about-us">
+      <div class="container about-us__container">
+        <div class="about-us-item about-us__item about-us__item-1" data-aos="fade-right" data-aos-duration="800">
+          <div class="about-us-item__stat"><img class="about-us-item__stat-icon" src="/img/about-us-1.png" alt="Две студии">
+            <div class="about-us-item__stat-value">2</div>
+          </div>
+          <h4 class="about-us-item__title">Две студии</h4>
+          <div class="about-us-item__text">Мы работаем в двух городах: Москва и Омск</div>
+        </div>
+        <div class="about-us-item about-us__item about-us__item-2" data-aos="fade-up" data-aos-duration="800">
+          <div class="about-us-item__stat"><img class="about-us-item__stat-icon" src="/img/about-us-2.png" alt="10 сотрудников">
+            <div class="about-us-item__stat-value">10</div>
+          </div>
+          <h4 class="about-us-item__title">10 сотрудников</h4>
+          <div class="about-us-item__text">В нашем штате работает 10 сотрудников</div>
+        </div>
+        <div class="about-us-item about-us__item about-us__item-3" data-aos="fade-left" data-aos-duration="800">
+          <div class="about-us-item__stat"><img class="about-us-item__stat-icon" src="/img/about-us-3.png" alt="Работаем с 2013 года">
+            <div class="about-us-item__stat-value">13</div>
+          </div>
+          <h4 class="about-us-item__title">Работаем с 2013 года</h4>
+          <div class="about-us-item__text">Мы професиссионалы своего дела</div>
+        </div>
+      </div>
+    </div>
+    <div class="branches">
+      <div class="container" data-aos="fade-right" data-aos-duration="800">
+        <div class="branches__items">
+              <div class="branches-item btn--modal btn--modal-order">
+                <div class="branches-item__header"><img class="branches-item__logo" src="/img/logo.png" alt="Landing Space">
+                  <div class="branches-item__header-group">
+                    <div class="branches-item__name">Space Base</div>
+                    <div class="branches-item__address">ул. Дербеневская набережная д.17/17к2</div>
+                  </div>
+                </div>
+                <div class="branches-item__banner"><img class="branches-item__banner-image" src="/img/branch-1.png" alt="Текст заголовок"></div>
+                <div class="branches-item__body">
+                  <div class="branches-item__controls">
+                    <!-- TODO: why are icons here when element has hover overlay?--><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--like" src="/img/like.png" alt="Like"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--comment" src="/img/comment.png" alt="Comment"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--reply" src="/img/reply.png" alt="Reply"></a>
+                  </div>
+                  <div class="branches-item__title">Текст заголовок</div>
+                  <div class="branches-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                </div>
+                <div class="branches-item-overlay branches-item__overlay">
+                  <svg class="branches-item-overlay__icon">
+                    <use xlink:href="/img/arrow-3.svg#arrow"></use>
+                  </svg>
+                  <div class="branches-item-overlay__text">Забронировать время<br>студии</div>
+                </div>
+              </div>
+              <div class="branches-item btn--modal btn--modal-order">
+                <div class="branches-item__header"><img class="branches-item__logo" src="/img/logo.png" alt="Landing Space">
+                  <div class="branches-item__header-group">
+                    <div class="branches-item__name">Space Base</div>
+                    <div class="branches-item__address">ул. Дербеневская набережная д.17/17к2</div>
+                  </div>
+                </div>
+                <div class="branches-item__banner"><img class="branches-item__banner-image" src="/img/branch-2.png" alt="Текст заголовок"></div>
+                <div class="branches-item__body">
+                  <div class="branches-item__controls">
+                    <!-- TODO: why are icons here when element has hover overlay?--><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--like" src="/img/like.png" alt="Like"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--comment" src="/img/comment.png" alt="Comment"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--reply" src="/img/reply.png" alt="Reply"></a>
+                  </div>
+                  <div class="branches-item__title">Текст заголовок</div>
+                  <div class="branches-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                </div>
+                <div class="branches-item-overlay branches-item__overlay">
+                  <svg class="branches-item-overlay__icon">
+                    <use xlink:href="/img/arrow-3.svg#arrow"></use>
+                  </svg>
+                  <div class="branches-item-overlay__text">Забронировать время<br>студии</div>
+                </div>
+              </div>
+              <div class="branches-item btn--modal btn--modal-order">
+                <div class="branches-item__header"><img class="branches-item__logo" src="/img/logo.png" alt="Landing Space">
+                  <div class="branches-item__header-group">
+                    <div class="branches-item__name">Space Base</div>
+                    <div class="branches-item__address">ул. Дербеневская набережная д.17/17к2</div>
+                  </div>
+                </div>
+                <div class="branches-item__banner"><img class="branches-item__banner-image" src="/img/branch-3.png" alt="Текст заголовок"></div>
+                <div class="branches-item__body">
+                  <div class="branches-item__controls">
+                    <!-- TODO: why are icons here when element has hover overlay?--><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--like" src="/img/like.png" alt="Like"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--comment" src="/img/comment.png" alt="Comment"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--reply" src="/img/reply.png" alt="Reply"></a>
+                  </div>
+                  <div class="branches-item__title">Текст заголовок</div>
+                  <div class="branches-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                </div>
+                <div class="branches-item-overlay branches-item__overlay">
+                  <svg class="branches-item-overlay__icon">
+                    <use xlink:href="/img/arrow-3.svg#arrow"></use>
+                  </svg>
+                  <div class="branches-item-overlay__text">Забронировать время<br>студии</div>
+                </div>
+              </div>
+        </div>
+        <div class="branches__carousel">
+          <div class="swiper branches-swiper branches__carousel-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                    <div class="branches-item btn--modal btn--modal-order">
+                      <div class="branches-item__header"><img class="branches-item__logo" src="/img/logo.png" alt="Landing Space">
+                        <div class="branches-item__header-group">
+                          <div class="branches-item__name">Space Base</div>
+                          <div class="branches-item__address">ул. Дербеневская набережная д.17/17к2</div>
+                        </div>
+                      </div>
+                      <div class="branches-item__banner"><img class="branches-item__banner-image" src="/img/branch-1.png" alt="Текст заголовок"></div>
+                      <div class="branches-item__body">
+                        <div class="branches-item__controls">
+                          <!-- TODO: why are icons here when element has hover overlay?--><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--like" src="/img/like.png" alt="Like"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--comment" src="/img/comment.png" alt="Comment"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--reply" src="/img/reply.png" alt="Reply"></a>
+                        </div>
+                        <div class="branches-item__title">Текст заголовок</div>
+                        <div class="branches-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                      </div>
+                      <div class="branches-item-overlay branches-item__overlay">
+                        <svg class="branches-item-overlay__icon">
+                          <use xlink:href="/img/arrow-3.svg#arrow"></use>
+                        </svg>
+                        <div class="branches-item-overlay__text">Забронировать время<br>студии</div>
+                      </div>
+                    </div>
+              </div>
+              <div class="swiper-slide">
+                    <div class="branches-item btn--modal btn--modal-order">
+                      <div class="branches-item__header"><img class="branches-item__logo" src="/img/logo.png" alt="Landing Space">
+                        <div class="branches-item__header-group">
+                          <div class="branches-item__name">Space Base</div>
+                          <div class="branches-item__address">ул. Дербеневская набережная д.17/17к2</div>
+                        </div>
+                      </div>
+                      <div class="branches-item__banner"><img class="branches-item__banner-image" src="/img/branch-2.png" alt="Текст заголовок"></div>
+                      <div class="branches-item__body">
+                        <div class="branches-item__controls">
+                          <!-- TODO: why are icons here when element has hover overlay?--><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--like" src="/img/like.png" alt="Like"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--comment" src="/img/comment.png" alt="Comment"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--reply" src="/img/reply.png" alt="Reply"></a>
+                        </div>
+                        <div class="branches-item__title">Текст заголовок</div>
+                        <div class="branches-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                      </div>
+                      <div class="branches-item-overlay branches-item__overlay">
+                        <svg class="branches-item-overlay__icon">
+                          <use xlink:href="/img/arrow-3.svg#arrow"></use>
+                        </svg>
+                        <div class="branches-item-overlay__text">Забронировать время<br>студии</div>
+                      </div>
+                    </div>
+              </div>
+              <div class="swiper-slide">
+                    <div class="branches-item btn--modal btn--modal-order">
+                      <div class="branches-item__header"><img class="branches-item__logo" src="/img/logo.png" alt="Landing Space">
+                        <div class="branches-item__header-group">
+                          <div class="branches-item__name">Space Base</div>
+                          <div class="branches-item__address">ул. Дербеневская набережная д.17/17к2</div>
+                        </div>
+                      </div>
+                      <div class="branches-item__banner"><img class="branches-item__banner-image" src="/img/branch-3.png" alt="Текст заголовок"></div>
+                      <div class="branches-item__body">
+                        <div class="branches-item__controls">
+                          <!-- TODO: why are icons here when element has hover overlay?--><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--like" src="/img/like.png" alt="Like"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--comment" src="/img/comment.png" alt="Comment"></a><a class="branches-item__controls-item" href="#"><img class="branches-item__controls-icon branches-item__controls-icon--reply" src="/img/reply.png" alt="Reply"></a>
+                        </div>
+                        <div class="branches-item__title">Текст заголовок</div>
+                        <div class="branches-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                      </div>
+                      <div class="branches-item-overlay branches-item__overlay">
+                        <svg class="branches-item-overlay__icon">
+                          <use xlink:href="/img/arrow-3.svg#arrow"></use>
+                        </svg>
+                        <div class="branches-item-overlay__text">Забронировать время<br>студии</div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="branches__navigation branches__navigation-next">
+            <svg class="branches__navigation-arrow">
+              <use xlink:href="/img/arrow-2.svg#arrow"></use>
+            </svg>
+          </div>
+          <div class="branches__navigation branches__navigation-prev">
+            <svg class="branches__navigation-arrow">
+              <use xlink:href="/img/arrow-2.svg#arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <div class="container" data-aos="fade-left" data-aos-duration="800">
+        <div class="services__container">
+              <h3 class="services__title services__title--mobile">Мы знаем как получить<br>готовую песню за 2 450р</h3>
+          <div class="services__carousel">
+            <div class="services__carousel-inner">
+              <div class="swiper services-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                        <div class="audio-2 js-audio">
+                          <audio class="js-audio__audio" src="/sounds/kipher__goons.mp4"></audio>
+                          <!-- Cover?-->
+                          <div class="audio-2__cover"><img class="audio-2__cover-image" src="/img/disk.png" alt=""></div>
+                          <div class="audio-2__title">Wrecking Ball</div>
+                          <div class="audio-2__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-2__controls">
+                            <button class="audio-2__fast audio-2__fast-backwards js-audio__fast-backwards">
+                              <svg class="audio-2__fast-icon audio-2__fast-icon--reverse">
+                                <use xlink:href="/img/fast-forward.svg#fast"></use>
+                              </svg>
+                            </button>
+                            <button class="audio-2__play js-audio__play">
+                              <svg class="audio-2__play-icon audio-2__play-icon--play">
+                                <use xlink:href="/img/play.svg#play"></use>
+                              </svg>
+                              <svg class="audio-2__play-icon audio-2__play-icon--pause">
+                                <use xlink:href="/img/pause.svg#pause"></use>
+                              </svg>
+                            </button>
+                            <button class="audio-2__fast audio-2__fast-forwards js-audio__fast-forwards">
+                              <svg class="audio-2__fast-icon">
+                                <use xlink:href="/img/fast-forward.svg#fast"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <div class="audio-2 js-audio">
+                          <audio class="js-audio__audio" src="/sounds/layto__beauty.mp4"></audio>
+                          <!-- Cover?-->
+                          <div class="audio-2__cover"><img class="audio-2__cover-image" src="/img/disk.png" alt=""></div>
+                          <div class="audio-2__title">Wrecking Ball</div>
+                          <div class="audio-2__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-2__controls">
+                            <button class="audio-2__fast audio-2__fast-backwards js-audio__fast-backwards">
+                              <svg class="audio-2__fast-icon audio-2__fast-icon--reverse">
+                                <use xlink:href="/img/fast-forward.svg#fast"></use>
+                              </svg>
+                            </button>
+                            <button class="audio-2__play js-audio__play">
+                              <svg class="audio-2__play-icon audio-2__play-icon--play">
+                                <use xlink:href="/img/play.svg#play"></use>
+                              </svg>
+                              <svg class="audio-2__play-icon audio-2__play-icon--pause">
+                                <use xlink:href="/img/pause.svg#pause"></use>
+                              </svg>
+                            </button>
+                            <button class="audio-2__fast audio-2__fast-forwards js-audio__fast-forwards">
+                              <svg class="audio-2__fast-icon">
+                                <use xlink:href="/img/fast-forward.svg#fast"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="services__navigation services__navigation--next services__navigation-next">
+                <svg class="services__navigation-arrow">
+                  <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                </svg>
+              </div>
+              <div class="services__navigation services__navigation--prev services__navigation-prev">
+                <svg class="services__navigation-arrow">
+                  <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <!--.services__pagination-->
+          </div>
+          <div class="services__content">
+                <h3 class="services__title">Мы знаем как получить<br>готовую песню за 2 450р</h3>
+            <div class="services__list-label">В услугу входит:</div>
+            <ul class="services__list">
+              <li class="services__list-item">- Аренда студии со всем оборудованием</li>
+              <li class="services__list-item">- Работа с нашим лучшим звукорежиссером</li>
+              <li class="services__list-item">- Запись песни, сведение, мастеринг</li>
+              <li class="services__list-item">- Все делаем сразу при вас</li>
+            </ul>
+            <div class="services__list-label">Дополнительно:</div>
+            <ul class="services__list">
+              <li class="services__list-item">- Написание текста</li>
+              <li class="services__list-item">- Создание аранжировки</li>
+              <li class="services__list-item">- Работа с саунд продюссером</li>
+              <li class="services__list-item">- Видео съемка во время записи</li>
+            </ul>
+            <button class="btn btn--base btn--modal btn--modal-order services__button">Забронировать время записи<span class="btn__accent"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio">
+      <div class="portfolio__planet"><img class="portfolio__planet-image" src="/img/planet-4.png" alt=""></div>
+      <div class="container portfolio__container" data-aos="fade-right" data-aos-duration="800">
+        <h2 class="portfolio__title">Послушайте наши треки</h2>
+        <div class="portfolio__tabs">
+          <label class="portfolio__tabs-item">
+            <input class="portfolio__tabs-item-input" type="radio" name="portfolio-type" checked onchange="portfolioChange('pop')"><span class="portfolio__tabs-item-box">Pop</span>
+          </label>
+          <label class="portfolio__tabs-item">
+            <input class="portfolio__tabs-item-input" type="radio" name="portfolio-type" onchange="portfolioChange('rap')"><span class="portfolio__tabs-item-box">Rap</span>
+          </label>
+          <label class="portfolio__tabs-item portfolio__tabs-item-3">
+            <input class="portfolio__tabs-item-input" type="radio" name="portfolio-type" onchange="portfolioChange('before_after')"><span class="portfolio__tabs-item-box">До/После</span>
+          </label>
+        </div>
+        <div class="portfolio-new">
+
+          <div class="portfolio-new-top">
+            <div class="portfolio-new-top-left">
+              #
+            </div>
+            <div class="portfolio-new-top-name">
+              Название
+            </div>
+            <div class="portfolio-new-top-album">
+              Альбом
+            </div>
+            <div class="portfolio-new-top-duration">
+              <span>Длительность</span>
+            </div>
+            <div class="portfolio-new-top-sound">
+              Звук
+            </div>
+          </div>
+          <div class="portfolio-new-wrapper">
+            <div class="portfolio-new-line">
+              <div class="portfolio-new__count">
+                1
+              </div>
+              <div class="portfolio-new-left">
+                <div class="portfolio-new-avatar">
+                  <img src="img/avtr.png" alt="">
+                </div>
+                <div class="portfolio-new-text">
+                  <h3 class="portfolio-new__title">
+                    Industry Baby (feat. Jack Harlow)
+                  </h3>
+                  <h4 class="portfolio-new__subtitle">
+                    Lil Nas X, Jack Harlow
+                  </h4>
+                </div>
+              </div>
+              
+              <div class="portfolio-new__album">
+                <span class="portfolio-new__album__text">
+                  MONTERO
+                </span>
+              </div>
+              <div class="portfolio-new__duration">
+                <span class="portfolio-new__duration__text">
+                  3:32
+                </span>
+              </div>
+              <div class="portfolio-new__right">
+                <div class="portfolio-new-block">
+                  <p class="portfolio-new-block__text">
+                    Чтобы почуствовать качество 
+                    нашего звука, нажмите на <img src="img/magic-wand_копия.png" alt="">
+                    <br>
+                    <span class="portfolio-new-block__span">
+                      ОК
+                    </span>
+                  </p>
+                </div>
+                <a href="#" class="portfolio-new__btn">
+                  Как звучит у нас
+                  <img src="img/magic-wand_копия_2.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-new-line">
+              <div class="portfolio-new__count">
+                2
+              </div>
+              <div class="portfolio-new-left">
+                <div class="portfolio-new-avatar">
+                  <img src="img/avtr.png" alt="">
+                </div>
+                <div class="portfolio-new-text">
+                  <h3 class="portfolio-new__title">
+                    Track 1
+                  </h3>
+                  <h4 class="portfolio-new__subtitle">
+                    Lil nas X
+                  </h4>
+                </div>
+              </div>
+              
+              <div class="portfolio-new__album">
+                <span class="portfolio-new__album__text">
+                  MONTERO
+                </span>
+              </div>
+              <div class="portfolio-new__duration">
+                <span class="portfolio-new__duration__text">
+                  3:32
+                </span>
+              </div>
+              <div class="portfolio-new__right">
+                <div class="portfolio-new-block">
+                  <p class="portfolio-new-block__text">
+                    Чтобы почуствовать качество 
+                    нашего звука, нажмите на <img src="img/magic-wand_копия.png" alt="">
+                    <br>
+                    <span class="portfolio-new-block__span">
+                      ОК
+                    </span>
+                  </p>
+                </div>
+                <a href="#" class="portfolio-new__btn">
+                  Как звучит у нас
+                  <img src="img/magic-wand_копия_2.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-new-line">
+              <div class="portfolio-new__count">
+                3
+              </div>
+              <div class="portfolio-new-left">
+                <div class="portfolio-new-avatar">
+                  <img src="img/avtr.png" alt="">
+                </div>
+                <div class="portfolio-new-text">
+                  <h3 class="portfolio-new__title">
+                    Track 1
+                  </h3>
+                  <h4 class="portfolio-new__subtitle">
+                    Lil nas X
+                  </h4>
+                </div>
+              </div>
+              
+              <div class="portfolio-new__album">
+                <span class="portfolio-new__album__text">
+                  MONTERO
+                </span>
+              </div>
+              <div class="portfolio-new__duration">
+                <span class="portfolio-new__duration__text">
+                  3:32
+                </span>
+              </div>
+              <div class="portfolio-new__right">
+                <div class="portfolio-new-block">
+                  <p class="portfolio-new-block__text">
+                    Чтобы почуствовать качество 
+                    нашего звука, нажмите на <img src="img/magic-wand_копия.png" alt="">
+                    <br>
+                    <span class="portfolio-new-block__span">
+                      ОК
+                    </span>
+                  </p>
+                </div>
+                <a href="#" class="portfolio-new__btn">
+                  Как звучит у нас
+                  <img src="img/magic-wand_копия_2.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-new-line">
+              <div class="portfolio-new__count">
+                4
+              </div>
+              <div class="portfolio-new-left">
+                <div class="portfolio-new-avatar">
+                  <img src="img/avtr.png" alt="">
+                </div>
+                <div class="portfolio-new-text">
+                  <h3 class="portfolio-new__title">
+                    Track 1
+                  </h3>
+                  <h4 class="portfolio-new__subtitle">
+                    Lil nas X
+                  </h4>
+                </div>
+              </div>
+              
+              <div class="portfolio-new__album">
+                <span class="portfolio-new__album__text">
+                  MONTERO
+                </span>
+              </div>
+              <div class="portfolio-new__duration">
+                <span class="portfolio-new__duration__text">
+                  3:32
+                </span>
+              </div>
+              <div class="portfolio-new__right">
+                <div class="portfolio-new-block">
+                  <p class="portfolio-new-block__text">
+                    Чтобы почуствовать качество 
+                    нашего звука, нажмите на <img src="img/magic-wand_копия.png" alt="">
+                    <br>
+                    <span class="portfolio-new-block__span">
+                      ОК
+                    </span>
+                  </p>
+                </div>
+                <a href="#" class="portfolio-new__btn">
+                  Как звучит у нас
+                  <img src="img/magic-wand_копия_2.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="portfolio-new-line">
+              <div class="portfolio-new__count">
+                5
+              </div>
+              <div class="portfolio-new-left">
+                <div class="portfolio-new-avatar">
+                  <img src="img/avtr.png" alt="">
+                </div>
+                <div class="portfolio-new-text">
+                  <h3 class="portfolio-new__title">
+                    Track 1
+                  </h3>
+                  <h4 class="portfolio-new__subtitle">
+                    Lil nas X
+                  </h4>
+                </div>
+              </div>
+              
+              <div class="portfolio-new__album">
+                <span class="portfolio-new__album__text">
+                  MONTERO
+                </span>
+              </div>
+              <div class="portfolio-new__duration">
+                <span class="portfolio-new__duration__text">
+                  3:32
+                </span>
+              </div>
+              <div class="portfolio-new__right">
+                <div class="portfolio-new-block">
+                  <p class="portfolio-new-block__text">
+                    Чтобы почуствовать качество 
+                    нашего звука, нажмите на <img src="img/magic-wand_копия.png" alt="">
+                    <br>
+                    <span class="portfolio-new-block__span">
+                      ОК
+                    </span>
+                  </p>
+                </div>
+                <a href="#" class="portfolio-new__btn">
+                  Как звучит у нас
+                  <img src="img/magic-wand_копия_2.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-new-dots portfolio-new-dots-wrapper">
+            <div class="portfolio-new-arrows">
+              <a href="#" class="portfolio-new-arrow portfolio-new-arrow__left">
+                <img src="img/next_(1).png" alt="">
+                Назад
+              </a>
+              <div class="portfolio-new-dots">
+                <a href="#" class="portfolio-new-dot portfolio-new-dot__active">
+                  1
+                </a>
+                <a href="#" class="portfolio-new-dot">
+                  2
+                </a>
+                <a href="#" class="portfolio-new-dot">
+                  3
+                </a>
+                <a href="#" class="portfolio-new-dot">
+                  4
+                </a>
+                <a href="#" class="portfolio-new-dot">
+                  5
+                </a>
+              </div>
+              <a href="#" class="portfolio-new-arrow portfolio-new-arrow__right">
+                Вперед
+                <img src="img/next_(1) (1).png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- TODO: independent carousels. JS make live only one of them due to class selector-->
+        <div class="portfolio__carousel active" data-type="pop">
+          <div class="portfolio__carousel-inner">
+            <div class="swiper portfolio-swiper portfolio__carousel-swiper" data-type="pop">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                      <div class="audio-1 js-audio portfolio__item">
+                        <audio class="js-audio__audio" src="/sounds/arrested_youth__mirrors.mp4"></audio>
+                        <div class="audio-1__track-cover"><img class="audio-1__track-cover-image" src="/img/album.png" alt=""></div>
+                        <div class="audio-1__duration">
+                          <input class="audio-1__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="audio-1__duration-time">
+                          <div class="audio-1__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-1__duration-time-full js-audio__duration-time-full">00:00</div>
+                        </div>
+                        <div class="audio-1__title">Грустная песня</div>
+                        <div class="audio-1__artist">TRILL PILL, Крид, MORGENSHTERN</div>
+                        <div class="audio-1__controls">
+                          <button class="audio-1__fast audio-1__fast-backwards js-audio__fast-backwards">
+                            <svg class="audio-1__fast-icon audio-1__fast-icon--reverse">
+                              <use xlink:href="/img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__play js-audio__play">
+                            <svg class="audio-1__play-icon audio-1__play-icon--play">
+                              <use xlink:href="/img/play.svg#play"></use>
+                            </svg>
+                            <svg class="audio-1__play-icon audio-1__play-icon--pause">
+                              <use xlink:href="/img/pause.svg#pause"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__fast audio-1__fast-forwards js-audio__fast-forwards">
+                            <svg class="audio-1__fast-icon">
+                              <use xlink:href="/img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="audio-1 js-audio portfolio__item">
+                        <audio class="js-audio__audio" src="/sounds/aviva__hypnotized.mp4"></audio>
+                        <div class="audio-1__track-cover"><img class="audio-1__track-cover-image" src="/img/album.png" alt=""></div>
+                        <div class="audio-1__duration">
+                          <input class="audio-1__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="audio-1__duration-time">
+                          <div class="audio-1__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-1__duration-time-full js-audio__duration-time-full">00:00</div>
+                        </div>
+                        <div class="audio-1__title">Грустная песня</div>
+                        <div class="audio-1__artist">TRILL PILL, Крид, MORGENSHTERN</div>
+                        <div class="audio-1__controls">
+                          <button class="audio-1__fast audio-1__fast-backwards js-audio__fast-backwards">
+                            <svg class="audio-1__fast-icon audio-1__fast-icon--reverse">
+                              <use xlink:href="/img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__play js-audio__play">
+                            <svg class="audio-1__play-icon audio-1__play-icon--play">
+                              <use xlink:href="/img/play.svg#play"></use>
+                            </svg>
+                            <svg class="audio-1__play-icon audio-1__play-icon--pause">
+                              <use xlink:href="/img/pause.svg#pause"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__fast audio-1__fast-forwards js-audio__fast-forwards">
+                            <svg class="audio-1__fast-icon">
+                              <use xlink:href="/img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="audio-1 js-audio portfolio__item">
+                        <audio class="js-audio__audio" src="/sounds/the_tech_thieves__fall.mp4"></audio>
+                        <div class="audio-1__track-cover"><img class="audio-1__track-cover-image" src="/img/album.png" alt=""></div>
+                        <div class="audio-1__duration">
+                          <input class="audio-1__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="audio-1__duration-time">
+                          <div class="audio-1__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-1__duration-time-full js-audio__duration-time-full">00:00</div>
+                        </div>
+                        <div class="audio-1__title">Грустная песня</div>
+                        <div class="audio-1__artist">TRILL PILL, Крид, MORGENSHTERN</div>
+                        <div class="audio-1__controls">
+                          <button class="audio-1__fast audio-1__fast-backwards js-audio__fast-backwards">
+                            <svg class="audio-1__fast-icon audio-1__fast-icon--reverse">
+                              <use xlink:href="/img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__play js-audio__play">
+                            <svg class="audio-1__play-icon audio-1__play-icon--play">
+                              <use xlink:href="/img/play.svg#play"></use>
+                            </svg>
+                            <svg class="audio-1__play-icon audio-1__play-icon--pause">
+                              <use xlink:href="/img/pause.svg#pause"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__fast audio-1__fast-forwards js-audio__fast-forwards">
+                            <svg class="audio-1__fast-icon">
+                              <use xlink:href="/img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="audio-1 js-audio portfolio__item">
+                        <audio class="js-audio__audio" src="/sounds/kops__part_of_life.mp4"></audio>
+                        <div class="audio-1__track-cover"><img class="audio-1__track-cover-image" src="/img/album.png" alt=""></div>
+                        <div class="audio-1__duration">
+                          <input class="audio-1__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="audio-1__duration-time">
+                          <div class="audio-1__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-1__duration-time-full js-audio__duration-time-full">00:00</div>
+                        </div>
+                        <div class="audio-1__title">Грустная песня</div>
+                        <div class="audio-1__artist">TRILL PILL, Крид, MORGENSHTERN</div>
+                        <div class="audio-1__controls">
+                          <button class="audio-1__fast audio-1__fast-backwards js-audio__fast-backwards">
+                            <svg class="audio-1__fast-icon audio-1__fast-icon--reverse">
+                              <use xlink:href="/img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__play js-audio__play">
+                            <svg class="audio-1__play-icon audio-1__play-icon--play">
+                              <use xlink:href="/img/play.svg#play"></use>
+                            </svg>
+                            <svg class="audio-1__play-icon audio-1__play-icon--pause">
+                              <use xlink:href="/img/pause.svg#pause"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__fast audio-1__fast-forwards js-audio__fast-forwards">
+                            <svg class="audio-1__fast-icon">
+                              <use xlink:href="/img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__navigation portfolio__navigation--next portfolio__navigation-next">
+              <svg class="portfolio__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="portfolio__navigation portfolio__navigation--prev portfolio__navigation-prev">
+              <svg class="portfolio__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- +audio-1(items[0].tracks[0].song).portfolio__item
+        // Player
+        // Title / Artist (handled by player?)
+        // Player controls
+        -->
+      </div>
+    </div>
+    <div class="your-voice">
+      <div class="container" data-aos="fade-left" data-aos-duration="800">
+        <div class="your-voice__container">
+          <div class="your-voice__body">
+            <h2 class="your-voice__title">Ваш голос</h2>
+            <div class="your-voice__subtitle">Технологии нашей студии позволяют сделать вокал идеальным</div>
+            <div class="your-voice__tagline">Уметь петь не обязательно</div>
+                <div class="your-voice__decoration your-voice__decoration--mobile"><img class="your-voice__decoration-image" src="/img/vocal-2.png" alt=""></div>
+            <div class="your-voice__carousel">
+              <div class="swiper your-voice-swiper your-voice__carousel-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="your-voice__item">
+                          <div class="audio-3 js-audio your-voice__item-audio">
+                            <audio class="js-audio__audio" src="/sounds/two_neighbors__never_talk_to_me_again.mp4"></audio>
+                            <div class="audio-3__header">
+                              <div class="audio-3__title">До</div>
+                              <div class="audio-3__duration-time-full js-audio__duration-time-full">00:00</div>
+                            </div>
+                            <div class="audio-3__duration">
+                              <input class="audio-3__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                            </div>
+                            <div class="audio-3__controls">
+                              <button class="audio-3__fast audio-3__fast-backwards js-audio__fast-backwards">
+                                <svg class="audio-3__fast-icon audio-3__fast-icon--reverse">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__play js-audio__play">
+                                <svg class="audio-3__play-icon audio-3__play-icon--play">
+                                  <use xlink:href="/img/play.svg#play"></use>
+                                </svg>
+                                <svg class="audio-3__play-icon audio-3__play-icon--pause">
+                                  <use xlink:href="/img/pause.svg#pause"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__fast audio-3__fast-forwards js-audio__fast-forwards">
+                                <svg class="audio-3__fast-icon">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="audio-3 js-audio your-voice__item-audio">
+                            <audio class="js-audio__audio" src="/sounds/kops__part_of_life.mp4"></audio>
+                            <div class="audio-3__header">
+                              <div class="audio-3__title">После</div>
+                              <div class="audio-3__duration-time-full js-audio__duration-time-full">00:00</div>
+                            </div>
+                            <div class="audio-3__duration">
+                              <input class="audio-3__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                            </div>
+                            <div class="audio-3__controls">
+                              <button class="audio-3__fast audio-3__fast-backwards js-audio__fast-backwards">
+                                <svg class="audio-3__fast-icon audio-3__fast-icon--reverse">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__play js-audio__play">
+                                <svg class="audio-3__play-icon audio-3__play-icon--play">
+                                  <use xlink:href="/img/play.svg#play"></use>
+                                </svg>
+                                <svg class="audio-3__play-icon audio-3__play-icon--pause">
+                                  <use xlink:href="/img/pause.svg#pause"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__fast audio-3__fast-forwards js-audio__fast-forwards">
+                                <svg class="audio-3__fast-icon">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="your-voice__item">
+                          <div class="audio-3 js-audio your-voice__item-audio">
+                            <audio class="js-audio__audio" src="/sounds/two_neighbors__never_talk_to_me_again.mp4"></audio>
+                            <div class="audio-3__header">
+                              <div class="audio-3__title">До</div>
+                              <div class="audio-3__duration-time-full js-audio__duration-time-full">00:00</div>
+                            </div>
+                            <div class="audio-3__duration">
+                              <input class="audio-3__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                            </div>
+                            <div class="audio-3__controls">
+                              <button class="audio-3__fast audio-3__fast-backwards js-audio__fast-backwards">
+                                <svg class="audio-3__fast-icon audio-3__fast-icon--reverse">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__play js-audio__play">
+                                <svg class="audio-3__play-icon audio-3__play-icon--play">
+                                  <use xlink:href="/img/play.svg#play"></use>
+                                </svg>
+                                <svg class="audio-3__play-icon audio-3__play-icon--pause">
+                                  <use xlink:href="/img/pause.svg#pause"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__fast audio-3__fast-forwards js-audio__fast-forwards">
+                                <svg class="audio-3__fast-icon">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="audio-3 js-audio your-voice__item-audio">
+                            <audio class="js-audio__audio" src="/sounds/kops__part_of_life.mp4"></audio>
+                            <div class="audio-3__header">
+                              <div class="audio-3__title">После</div>
+                              <div class="audio-3__duration-time-full js-audio__duration-time-full">00:00</div>
+                            </div>
+                            <div class="audio-3__duration">
+                              <input class="audio-3__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                            </div>
+                            <div class="audio-3__controls">
+                              <button class="audio-3__fast audio-3__fast-backwards js-audio__fast-backwards">
+                                <svg class="audio-3__fast-icon audio-3__fast-icon--reverse">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__play js-audio__play">
+                                <svg class="audio-3__play-icon audio-3__play-icon--play">
+                                  <use xlink:href="/img/play.svg#play"></use>
+                                </svg>
+                                <svg class="audio-3__play-icon audio-3__play-icon--pause">
+                                  <use xlink:href="/img/pause.svg#pause"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__fast audio-3__fast-forwards js-audio__fast-forwards">
+                                <svg class="audio-3__fast-icon">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="your-voice__item">
+                          <div class="audio-3 js-audio your-voice__item-audio">
+                            <audio class="js-audio__audio" src="/sounds/two_neighbors__never_talk_to_me_again.mp4"></audio>
+                            <div class="audio-3__header">
+                              <div class="audio-3__title">До</div>
+                              <div class="audio-3__duration-time-full js-audio__duration-time-full">00:00</div>
+                            </div>
+                            <div class="audio-3__duration">
+                              <input class="audio-3__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                            </div>
+                            <div class="audio-3__controls">
+                              <button class="audio-3__fast audio-3__fast-backwards js-audio__fast-backwards">
+                                <svg class="audio-3__fast-icon audio-3__fast-icon--reverse">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__play js-audio__play">
+                                <svg class="audio-3__play-icon audio-3__play-icon--play">
+                                  <use xlink:href="/img/play.svg#play"></use>
+                                </svg>
+                                <svg class="audio-3__play-icon audio-3__play-icon--pause">
+                                  <use xlink:href="/img/pause.svg#pause"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__fast audio-3__fast-forwards js-audio__fast-forwards">
+                                <svg class="audio-3__fast-icon">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="audio-3 js-audio your-voice__item-audio">
+                            <audio class="js-audio__audio" src="/sounds/kops__part_of_life.mp4"></audio>
+                            <div class="audio-3__header">
+                              <div class="audio-3__title">После</div>
+                              <div class="audio-3__duration-time-full js-audio__duration-time-full">00:00</div>
+                            </div>
+                            <div class="audio-3__duration">
+                              <input class="audio-3__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                            </div>
+                            <div class="audio-3__controls">
+                              <button class="audio-3__fast audio-3__fast-backwards js-audio__fast-backwards">
+                                <svg class="audio-3__fast-icon audio-3__fast-icon--reverse">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__play js-audio__play">
+                                <svg class="audio-3__play-icon audio-3__play-icon--play">
+                                  <use xlink:href="/img/play.svg#play"></use>
+                                </svg>
+                                <svg class="audio-3__play-icon audio-3__play-icon--pause">
+                                  <use xlink:href="/img/pause.svg#pause"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__fast audio-3__fast-forwards js-audio__fast-forwards">
+                                <svg class="audio-3__fast-icon">
+                                  <use xlink:href="/img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="your-voice__navigation your-voice__navigation--next your-voice__navigation-next">
+                <svg class="your-voice__navigation-arrow">
+                  <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                </svg>
+              </div>
+              <div class="your-voice__navigation your-voice__navigation--prev your-voice__navigation-prev">
+                <svg class="your-voice__navigation-arrow">
+                  <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                </svg>
+              </div>
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order your-voice__button">Заказать запись<span class="btn__accent"></span></button>
+          </div>
+              <div class="your-voice__decoration"><img class="your-voice__decoration-image" src="/img/vocal-2.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="process">
+      <div class="container process__container" data-aos="zoom-in" data-aos-duration="800">
+        <div class="process__body">
+          <h2 class="process__title">Процесс работы</h2>
+              <div class="process__decoration process__decoration--mobile"><img class="process__decoration-image" src="/img/vocal-3.png" alt=""></div>
+          <div class="process__text">
+            <p class="process__text-paragraph">Привет друг. Ты знаешь, что хочешь создать, но трудно объяснить все на словах пока ты находишься удаленно?</p>
+            <p class="process__text-paragraph">Мы можем назначить встречу, обсудить все за чашкой чая в спокойной и теплой обстановке.</p>
+            <p class="process__text-paragraph">Звукорежиссер и аранжировщик внимательно выслушают твою идею, и предложат разные варианты как все реализовать</p>
+            <p class="process__text-paragraph">Сделаем запись, все настроим и открректируем.</p>
+            <p class="process__text-paragraph">Мы не отпустим тебя, пока ты не получишь лучший результат.</p>
+          </div>
+          <button class="btn btn--base btn--modal btn--modal-order process__button">Сделать запись<span class="btn__accent"></span></button>
+        </div>
+            <div class="process__decoration"><img class="process__decoration-image" src="/img/vocal-3.png" alt=""></div>
+      </div>
+    </div>
+    <div class="gallery">
+      <!-- TODO: lightGallery-->
+      <div class="container" data-aos="zoom-in" data-aos-duration="800">
+        <h2 class="gallery__title">Используем только профессиональное<br>оборудование</h2>
+        <div class="gallery__subtitle">Общая стоимость аппаратуры — 80 000$</div>
+        <!-- TODO: lightgallery-->
+        <!-- TODO: styles for .gallery__item to save aspect ration-->
+        <div class="gallery__items">
+          <div class="gallery__item"><img class="gallery__item-image" src="/img/branch-1.png" alt=""></div>
+          <div class="gallery__item"><img class="gallery__item-image" src="/img/branch-2.png" alt=""></div>
+          <div class="gallery__item"><img class="gallery__item-image" src="/img/branch-3.png" alt=""></div>
+          <div class="gallery__item"><img class="gallery__item-image" src="/img/gallery-4.png" alt=""></div>
+          <div class="gallery__item"><img class="gallery__item-image" src="/img/gallery-5.png" alt=""></div>
+          <div class="gallery__item"><img class="gallery__item-image" src="/img/gallery-6.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="equipment">
+      <div class="equipment__planet"><img class="equipment__planet-image" src="/img/planet-5.png" alt=""></div>
+      <div class="container equipment__container" data-aos="fade-right" data-aos-duration="800">
+        <h2 class="equipment__title">У нас самое топовое оборудование</h2>
+        <div class="equipment__carousel">
+          <div class="equipment__carousel-inner">
+            <div class="swiper equipment-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="equipment-item">
+                    <div class="equipment-item__photo"><img class="equipment-item__photo-image" src="/img/equipment-1.png" alt="ADAM S5X-v"></div>
+                    <div class="equipment-item__title">ADAM S5X-v</div>
+                    <div class="equipment-item__text">Флагманский активный четырёхполосный монитор дальнего поля со схемой квадро-усиления: ШИМ-усилитель для НЧ и СЧ/НЧ-динамиков, A/B-усилитель для ВЧ- и СЧ-динамиков. Фирменные  НЧ- и СЧ-динамики HexaCone диаметром 12” и 7.5”, арамидно-пластиковое ядро которых представляет собой соты.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="equipment-item">
+                    <div class="equipment-item__photo"><img class="equipment-item__photo-image" src="/img/equipment-2.png" alt="APS AEON 2"></div>
+                    <div class="equipment-item__title">APS AEON 2</div>
+                    <div class="equipment-item__text">Активный двухполосный студийный монитор Линейку профессиональной акустики Польской компании APS пополнил активный двухполосный студийный монитор AEON 2, разработанный совместно с Germano Acoustics.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="equipment-item">
+                    <div class="equipment-item__photo"><img class="equipment-item__photo-image" src="/img/equipment-1.png" alt="Yamaha NS10"></div>
+                    <div class="equipment-item__title">Yamaha NS10</div>
+                    <div class="equipment-item__text">Самые успешные студийные мониторы ближнего поля. Впервые выпущенные в конце 80-х, эти мониторы достаточно быстро завоевали признаниеи любовь звукорежиссеров со всего мира и стали стандартом де-факто в студиях звукозаписи.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="equipment-item">
+                    <div class="equipment-item__photo"><img class="equipment-item__photo-image" src="/img/equipment-1.png" alt="ADAM S5X-v"></div>
+                    <div class="equipment-item__title">ADAM S5X-v</div>
+                    <div class="equipment-item__text">Флагманский активный четырёхполосный монитор дальнего поля со схемой квадро-усиления: ШИМ-усилитель для НЧ и СЧ/НЧ-динамиков, A/B-усилитель для ВЧ- и СЧ-динамиков. Фирменные  НЧ- и СЧ-динамики HexaCone диаметром 12” и 7.5”, арамидно-пластиковое ядро которых представляет собой соты.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="equipment__navigation equipment__navigation--next equipment__navigation-next">
+              <svg class="equipment__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="equipment__navigation equipment__navigation--prev equipment__navigation-prev">
+              <svg class="equipment__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="equipment__pagination"></div>
+        </div>
+        <div class="equipment__bottom"><a class="equipment__download" href="#">
+            <div class="equipment__download-text">Скачать весь список</div>
+            <svg class="equipment__download-icon">
+              <use xlink:href="/img/download.svg#download"></use>
+            </svg></a></div>
+      </div>
+    </div>
+    <div class="promotion">
+      <div class="container promotion__container" data-aos="fade-left" data-aos-duration="800">
+        <div class="promotion__body">
+          <h2 class="promotion__title">Заказать<br>продвижение артиста</h2>
+              <div class="promotion__decoration promotion__decoration--mobile"><img class="promotion__decoration-image" src="/img/vocal-4.png" alt=""></div>
+          <div class="promotion__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <button class="btn btn--base btn--modal btn--modal-order promotion__button">Сделать запись<span class="btn__accent"></span></button>
+        </div>
+            <div class="promotion__decoration"><img class="promotion__decoration-image" src="/img/vocal-4.png" alt=""></div>
+      </div>
+    </div>
+    <div class="clients">
+      <div class="container" data-aos="zoom-in" data-aos-duration="800">
+        <h2 class="clients__title">Мы работали с такими крупными<br>артистами и блогерами, как:</h2>
+        <div class="clients__carousel">
+          <div class="clients__carousel-inner">
+            <!-- Swiper Desktop-->
+            <div class="swiper clients-swiper clients__carousel-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="clients__items">
+                        <div class="clients-item">
+                          <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-1.png" alt="Sah4r SHow"></div>
+                          <div class="clients-item__name">Sah4r SHow</div>
+                          <div class="clients-item__status">Полупрофессиональный игрок в Counter-Strike снимающие развлекательные видео для YouTube по данной игре</div>
+                        </div>
+                        <div class="clients-item">
+                          <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-2.png" alt="РАПСАТ"></div>
+                          <div class="clients-item__name">РАПСАТ</div>
+                          <div class="clients-item__status">Рэп-исполнитель. Музыкант прославился, став участником 2-го сезона рейтингового телепроекта «Песни» на ТНТ. </div>
+                        </div>
+                        <div class="clients-item">
+                          <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-3.png" alt="Миша мичелz"></div>
+                          <div class="clients-item__name">Миша мичелz</div>
+                          <div class="clients-item__status">Известный исполнитель. Автор популярного трека  «Клава Кока &amp; MORGENSHTERN - Мне пох»</div>
+                        </div>
+                        <div class="clients-item">
+                          <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-4.png" alt="dj dimixer"></div>
+                          <div class="clients-item__name">dj dimixer</div>
+                          <div class="clients-item__status">Российский DJ, Музыкант и Композитор. Создатель и ведущий программы «ПО СТУДИЯМ»</div>
+                        </div>
+                        <div class="clients-item">
+                          <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-5.png" alt="Thomas Mraz"></div>
+                          <div class="clients-item__name">Thomas Mraz</div>
+                          <div class="clients-item__status">Российский хип-хоп-исполнитель, певец, автор песен, бывший участник творческих объединений «Dopeclvb» и «YungRussia»</div>
+                        </div>
+                        <div class="clients-item">
+                          <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-6.png" alt="АСИЯ"></div>
+                          <div class="clients-item__name">АСИЯ</div>
+                          <div class="clients-item__status">Российская певица, участница шоу «Песни 2 сезон»</div>
+                        </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients__items">
+                        <div class="clients-item">
+                          <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-6.png" alt="АСИЯ"></div>
+                          <div class="clients-item__name">АСИЯ</div>
+                          <div class="clients-item__status">Российская певица, участница шоу «Песни 2 сезон»</div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Mobile-->
+            <div class="swiper clients-swiper-mobile clients__carousel-swiper clients__carousel-swiper--mobile">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                      <div class="clients-item">
+                        <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-1.png" alt="Sah4r SHow"></div>
+                        <div class="clients-item__name">Sah4r SHow</div>
+                        <div class="clients-item__status">Полупрофессиональный игрок в Counter-Strike снимающие развлекательные видео для YouTube по данной игре</div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="clients-item">
+                        <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-2.png" alt="РАПСАТ"></div>
+                        <div class="clients-item__name">РАПСАТ</div>
+                        <div class="clients-item__status">Рэп-исполнитель. Музыкант прославился, став участником 2-го сезона рейтингового телепроекта «Песни» на ТНТ. </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="clients-item">
+                        <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-3.png" alt="Миша мичелz"></div>
+                        <div class="clients-item__name">Миша мичелz</div>
+                        <div class="clients-item__status">Известный исполнитель. Автор популярного трека  «Клава Кока &amp; MORGENSHTERN - Мне пох»</div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="clients-item">
+                        <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-4.png" alt="dj dimixer"></div>
+                        <div class="clients-item__name">dj dimixer</div>
+                        <div class="clients-item__status">Российский DJ, Музыкант и Композитор. Создатель и ведущий программы «ПО СТУДИЯМ»</div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="clients-item">
+                        <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-5.png" alt="Thomas Mraz"></div>
+                        <div class="clients-item__name">Thomas Mraz</div>
+                        <div class="clients-item__status">Российский хип-хоп-исполнитель, певец, автор песен, бывший участник творческих объединений «Dopeclvb» и «YungRussia»</div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="clients-item">
+                        <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-6.png" alt="АСИЯ"></div>
+                        <div class="clients-item__name">АСИЯ</div>
+                        <div class="clients-item__status">Российская певица, участница шоу «Песни 2 сезон»</div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="clients-item">
+                        <div class="clients-item__photo"><img class="clients-item__photo-image" src="/img/artist-6.png" alt="АСИЯ"></div>
+                        <div class="clients-item__name">АСИЯ</div>
+                        <div class="clients-item__status">Российская певица, участница шоу «Песни 2 сезон»</div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <!-- Navigation Arrows-->
+            <div class="clients__navigation clients__navigation-next">
+              <svg class="clients__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="clients__navigation clients__navigation-prev">
+              <svg class="clients__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- Pagination dots-->
+          <div class="clients__pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="video-gallery">
+      <!-- TODO: light gallery for video || video modal-->
+      <div class="container" data-aos="fade-right" data-aos-duration="800">
+        <h2 class="video-gallery__title">Смотрите наши видео</h2>
+        <div class="video-gallery__carousel">
+          <div class="video-gallery__carousel-inner">
+            <div class="swiper video-gallery-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- TODO: links to youtube? youtube iframe-->
+                  <div class="video-gallery-item">
+                    <div class="video-gallery-item__banner"><img class="video-gallery-item__banner-image" src="/img/temp.png" alt="Загловок видео 1">
+                      <div class="video-gallery-item__banner-play">
+                        <svg class="video-gallery-item__banner-play-icon">
+                          <use xlink:href="/img/play.svg#play"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="video-gallery-item__body">
+                      <h4 class="video-gallery-item__title">Загловок видео 1</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- TODO: links to youtube? youtube iframe-->
+                  <div class="video-gallery-item">
+                    <div class="video-gallery-item__banner"><img class="video-gallery-item__banner-image" src="/img/temp.png" alt="Загловок видео 1">
+                      <div class="video-gallery-item__banner-play">
+                        <svg class="video-gallery-item__banner-play-icon">
+                          <use xlink:href="/img/play.svg#play"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="video-gallery-item__body">
+                      <h4 class="video-gallery-item__title">Загловок видео 1</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- TODO: links to youtube? youtube iframe-->
+                  <div class="video-gallery-item">
+                    <div class="video-gallery-item__banner"><img class="video-gallery-item__banner-image" src="/img/temp.png" alt="Загловок видео 1">
+                      <div class="video-gallery-item__banner-play">
+                        <svg class="video-gallery-item__banner-play-icon">
+                          <use xlink:href="/img/play.svg#play"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="video-gallery-item__body">
+                      <h4 class="video-gallery-item__title">Загловок видео 1</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- TODO: links to youtube? youtube iframe-->
+                  <div class="video-gallery-item">
+                    <div class="video-gallery-item__banner"><img class="video-gallery-item__banner-image" src="/img/temp.png" alt="Загловок видео 1">
+                      <div class="video-gallery-item__banner-play">
+                        <svg class="video-gallery-item__banner-play-icon">
+                          <use xlink:href="/img/play.svg#play"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="video-gallery-item__body">
+                      <h4 class="video-gallery-item__title">Загловок видео 1</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-gallery__navigation video-gallery__navigation--next video-gallery__navigation-next">
+              <svg class="video-gallery__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="video-gallery__navigation video-gallery__navigation--prev video-gallery__navigation-prev">
+              <svg class="video-gallery__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="video-gallery__pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="comfort">
+      <div class="comfort__planet"><img class="comfort__planet-image" src="/img/planet-3.png" alt=""></div>
+      <div class="container comfort__container" data-aos="fade-left" data-aos-duration="800">
+        <div class="comfort__main">
+              <div class="comfort__decoration"><img class="comfort__decoration-image" src="/img/vocal-5.png" alt=""></div>
+          <div class="comfort__group">
+            <h2 class="comfort__title">Мы понимаем как важно настроиться на правильный лад</h2>
+                <div class="comfort__decoration comfort__decoration--mobile"><img class="comfort__decoration-image" src="/img/vocal-5.png" alt=""></div>
+            <div class="comfort__subtitle">У нас можно выпить кружечку чая, кофе, поиграть в игровую приставку и зарядиться творческим вдохновением перед началом работы</div>
+            <button class="btn btn--base btn--modal btn--modal-order comfort__button">Сделать запись<span class="btn__accent"></span></button>
+          </div>
+        </div>
+        <div class="comfort-advantages">
+          <div class="comfort-advantages-item">
+            <div class="comfort-advantages-item__icon-wrapper"><img class="comfort-advantages-item__icon--coffee comfort-advantages-item__icon" src="/img/comfort-advantage-1.png" alt="Лучший сервис"></div>
+            <div class="comfort-advantages-item__title">Лучший сервис</div>
+            <div class="comfort-advantages-item__text">Китайские чаи, кресло массажер, кальян, кофе и  другие лучшие чаи</div>
+          </div>
+          <div class="comfort-advantages-item">
+            <div class="comfort-advantages-item__icon-wrapper"><img class="comfort-advantages-item__icon--rythme comfort-advantages-item__icon" src="/img/comfort-advantage-2.png" alt="Качественный звук"></div>
+            <div class="comfort-advantages-item__title">Качественный звук</div>
+            <div class="comfort-advantages-item__text">У нас 3 пары мониторов и самые лучшие микрофоны</div>
+          </div>
+          <div class="comfort-advantages-item">
+            <div class="comfort-advantages-item__icon-wrapper"><img class="comfort-advantages-item__icon--sound comfort-advantages-item__icon" src="/img/comfort-advantage-3.png" alt="Песня при вас"></div>
+            <div class="comfort-advantages-item__title">Песня при вас</div>
+            <div class="comfort-advantages-item__text">Вы получите готовую песню сразу после завершения работы</div>
+          </div>
+          <div class="comfort-advantages-item">
+            <div class="comfort-advantages-item__icon-wrapper"><img class="comfort-advantages-item__icon--guarantee comfort-advantages-item__icon" src="/img/comfort-advantage-4.png" alt="Гарантия"></div>
+            <div class="comfort-advantages-item__title">Гарантия</div>
+            <div class="comfort-advantages-item__text">Если Вам не понравится результат - мы вернем деньги</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tariffs">
+      <div class="container" data-aos="zoom-in" data-aos-duration="800">
+        <h2 class="tariffs__title">Выберите свой тариф</h2>
+        <div class="tariffs__subtitle">У нас найдется место каждому музыканту, под любой бюджет</div>
+        <div class="tariffs__tabs">
+          <label class="tariffs-tab">
+            <input class="tariffs-tab__input" type="radio" name="tariff" onchange="tariffsChange('track_record')" checked><span class="tariffs-tab__box">Записать трек</span>
+          </label>
+          <label class="tariffs-tab">
+            <input class="tariffs-tab__input" type="radio" name="tariff" onchange="tariffsChange('multitrack')"><span class="tariffs-tab__box">Мультитрек</span>
+          </label>
+          <label class="tariffs-tab">
+            <input class="tariffs-tab__input" type="radio" name="tariff" onchange="tariffsChange('congratulatory')"><span class="tariffs-tab__box">Поздравительная</span>
+          </label>
+          <label class="tariffs-tab">
+            <input class="tariffs-tab__input" type="radio" name="tariff" onchange="tariffsChange('arrangement')"><span class="tariffs-tab__box">Аранжировка</span>
+          </label>
+          <label class="tariffs-tab">
+            <input class="tariffs-tab__input" type="radio" name="tariff" onchange="tariffsChange('song_to_order')"><span class="tariffs-tab__box">Песня на заказ</span>
+          </label>
+          <label class="tariffs-tab">
+            <input class="tariffs-tab__input" type="radio" name="tariff" onchange="tariffsChange('cover')"><span class="tariffs-tab__box">Обложка</span>
+          </label>
+        </div>
+        <div class="tariffs__panels-group active" data-type="track_record">
+          <div class="tariff-panel">
+            <div class="tariff-panel__name tariff-panel__name--silver">Silver</div>
+            <ul class="tariff-panel__list">
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Запись
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Сведение
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Мастеринг
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Дистрибьюция
+              </li>
+            </ul>
+            <div class="tariff-panel__text">Отлично подойдет для old-school Rap</div>
+            <div class="tariff-panel__price">5 900 ₽
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order tariff-panel__button">Выбрать тариф<span class="btn__accent"></span></button>
+          </div>
+          <div class="tariff-panel">
+            <div class="tariff-panel__name tariff-panel__name--gold">Gold</div>
+            <ul class="tariff-panel__list">
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Запись
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Сведение
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Мастеринг
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Коррекция нот
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Дистрибьюция
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Sound-продюссирование
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Скидка 30% на обложку
+              </li>
+            </ul>
+            <div class="tariff-panel__text">Отлично подойдёт для новой школы</div>
+            <div class="tariff-panel__price">
+              <div class="tariff-panel__price-old">10 990 ₽</div>5 900 ₽
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order tariff-panel__button">Выбрать тариф<span class="btn__accent"></span></button>
+          </div>
+          <div class="tariff-panel tariff-panel--highlighted">
+            <div class="tariff-panel__name tariff-panel__name--platinum">Platinum</div>
+            <ul class="tariff-panel__list">
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Запись
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Сведение мультитрека
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Коррекция нот
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Тизер в инстаграм
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Профессиональное фото
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Sound-продюссирование
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Обложка
+              </li>
+            </ul>
+            <div class="tariff-panel__text">100% гарантия лучшего результата</div>
+            <div class="tariff-panel__price">
+              <div class="tariff-panel__price-old">10 990 ₽</div>5 900 ₽
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order tariff-panel__button">Выбрать тариф<span class="btn__accent"></span></button>
+          </div>
+        </div>
+        <div class="tariffs__panels-group" data-type="multitrack">
+        </div>
+        <div class="tariffs__panels-group" data-type="congratulatory">
+          <div class="tariff-panel">
+            <div class="tariff-panel__name">Silver</div>
+            <ul class="tariff-panel__list">
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Запись
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Сведение
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Мастеринг
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Дистрибьюция
+              </li>
+            </ul>
+            <div class="tariff-panel__text">Отлично подойдет для old-school Rap</div>
+            <div class="tariff-panel__price">5 900 ₽
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order tariff-panel__button">Выбрать тариф<span class="btn__accent"></span></button>
+          </div>
+          <div class="tariff-panel">
+            <div class="tariff-panel__name tariff-panel__name--gold">Gold</div>
+            <ul class="tariff-panel__list">
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Запись
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Сведение
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Мастеринг
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Коррекция нот
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Дистрибьюция
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Sound-продюссирование
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Скидка 30% на обложку
+              </li>
+            </ul>
+            <div class="tariff-panel__text">Отлично подойдёт для новой школы</div>
+            <div class="tariff-panel__price">
+              <div class="tariff-panel__price-old">10 990 ₽</div>5 900 ₽
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order tariff-panel__button">Выбрать тариф<span class="btn__accent"></span></button>
+          </div>
+          <div class="tariff-panel tariff-panel--highlighted">
+            <div class="tariff-panel__name tariff-panel__name--platinum">Platinum</div>
+            <ul class="tariff-panel__list">
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Запись
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Сведение мультитрека
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Коррекция нот
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Тизер в инстаграм
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Профессиональное фото
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Sound-продюссирование
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Обложка
+              </li>
+            </ul>
+            <div class="tariff-panel__text">100% гарантия лучшего результата</div>
+            <div class="tariff-panel__price">5 900 ₽
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order tariff-panel__button">Выбрать тариф<span class="btn__accent"></span></button>
+          </div>
+        </div>
+        <div class="tariffs__panels-group" data-type="arrangement">
+          <div class="tariff-panel">
+            <div class="tariff-panel__name tariff-panel__name--silver">Silver</div>
+            <ul class="tariff-panel__list">
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Запись
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Сведение
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Мастеринг
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Дистрибьюция
+              </li>
+            </ul>
+            <div class="tariff-panel__text">Отлично подойдет для old-school Rap</div>
+            <div class="tariff-panel__price">5 900 ₽
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order tariff-panel__button">Выбрать тариф<span class="btn__accent"></span></button>
+          </div>
+          <div class="tariff-panel">
+            <div class="tariff-panel__name tariff-panel__name--gold">Gold</div>
+            <ul class="tariff-panel__list">
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Запись
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Сведение
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Мастеринг
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Коррекция нот
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Дистрибьюция
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Sound-продюссирование
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Скидка 30% на обложку
+              </li>
+            </ul>
+            <div class="tariff-panel__text">Отлично подойдёт для новой школы</div>
+            <div class="tariff-panel__price">
+              <div class="tariff-panel__price-old">10 990 ₽</div>5 900 ₽
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order tariff-panel__button">Выбрать тариф<span class="btn__accent"></span></button>
+          </div>
+          <div class="tariff-panel tariff-panel--highlighted">
+            <div class="tariff-panel__name tariff-panel__name--platinum">Platinum</div>
+            <ul class="tariff-panel__list">
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Запись
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Сведение мультитрека
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Коррекция нот
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--verification">
+                  <use xlink:href="/img/verification.svg#verification"></use>
+                </svg>
+                <!-- img(src="/img/verification.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--verification-->Тизер в инстаграм
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Профессиональное фото
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Sound-продюссирование
+              </li>
+              <li class="tariff-panel__list-item">
+                <svg class="tariff-panel__list-item-icon tariff-panel__list-item-icon--present">
+                  <use xlink:href="/img/present.svg#present"></use>
+                </svg>
+                <!-- img(src="/img/present.png" alt="").tariff-panel__list-item-icon.tariff-panel__list-item-icon--present-->Обложка
+              </li>
+            </ul>
+            <div class="tariff-panel__text">100% гарантия лучшего результата</div>
+            <div class="tariff-panel__price">5 900 ₽
+            </div>
+            <button class="btn btn--base btn--modal btn--modal-order tariff-panel__button">Выбрать тариф<span class="btn__accent"></span></button>
+          </div>
+        </div>
+        <div class="tariffs__panels-group" data-type="song_to_order">
+        </div>
+        <div class="tariffs__panels-group" data-type="cover">
+        </div>
+      </div>
+    </div>
+    <div class="certificate">
+      <div class="certificate__planet"><img class="certificate__planet-image" src="/img/planet-6.png" alt=""></div>
+      <div class="container certificate__container" data-aos="zoom-in" data-aos-duration="800">
+        <h2 class="certificate__title">Подарочный сертификат</h2>
+        <div class="certificate-banner certificate__banner">
+          <div class="certificate-banner__background"><img class="certificate-banner__background-image" src="/img/certificate.png" alt=""><img class="certificate-banner__background-image certificate-banner__background-image--mobile" src="/img/certificate-2.png" alt=""></div>
+          <div class="certificate-banner__content">
+            <h4 class="certificate-banner__title">Подари своим близким день счастья!</h4>
+            <div class="certificate-banner__subtitle">Уникальное оформление и упаковка сертификата <span class="bold">бесплатно</span></div>
+          </div>
+          <!-- ...-->
+        </div>
+        <!-- TODO: provide data to modal & send-->
+        <form class="certificate-form certificate__form">
+          <h4 class="certificate-form__title">Расчет стоимости подарочного сертификата</h4>
+          <div class="certificate-form__subtitle">Сертификат рассчитан на одну песню!</div>
+          <div class="certificate-form__group-1">
+            <label class="party-checkbox certificate-form__party-checkbox certificate-form__party-checkbox-1">
+              <input class="party-checkbox__input" type="radio" name="certificate-party">
+              <div class="party-checkbox__box">
+                <div class="party-checkbox__icon-wrapper"><img class="party-checkbox__icon--confetti party-checkbox__icon" src="/img/party-1.png" alt="На день рождение"></div>
+                <div class="party-checkbox__text">На день рождение</div>
+              </div>
+            </label>
+            <label class="party-checkbox certificate-form__party-checkbox certificate-form__party-checkbox-2">
+              <input class="party-checkbox__input" type="radio" name="certificate-party">
+              <div class="party-checkbox__box">
+                <div class="party-checkbox__icon-wrapper"><img class="party-checkbox__icon--rings party-checkbox__icon" src="/img/party-2.png" alt="На свадьбу"></div>
+                <div class="party-checkbox__text">На свадьбу</div>
+              </div>
+            </label>
+            <label class="party-checkbox certificate-form__party-checkbox certificate-form__party-checkbox-3">
+              <input class="party-checkbox__input" type="radio" name="certificate-party">
+              <div class="party-checkbox__box">
+                <div class="party-checkbox__icon-wrapper"><img class="party-checkbox__icon--balloons party-checkbox__icon" src="/img/party-3.png" alt="На 14 февраля"></div>
+                <div class="party-checkbox__text">На 14 февраля</div>
+              </div>
+            </label>
+            <label class="party-checkbox certificate-form__party-checkbox certificate-form__party-checkbox-4">
+              <input class="party-checkbox__input" type="radio" name="certificate-party">
+              <div class="party-checkbox__box">
+                <div class="party-checkbox__icon-wrapper"><img class="party-checkbox__icon--women party-checkbox__icon" src="/img/party-4.png" alt="На 8 марта"></div>
+                <div class="party-checkbox__text">На 8 марта</div>
+              </div>
+            </label>
+            <label class="party-checkbox certificate-form__party-checkbox certificate-form__party-checkbox-5">
+              <input class="party-checkbox__input" type="radio" name="certificate-party">
+              <div class="party-checkbox__box">
+                <div class="party-checkbox__icon-wrapper"><img class="party-checkbox__icon--armor party-checkbox__icon" src="/img/party-5.png" alt="На 23 февраля"></div>
+                <div class="party-checkbox__text">На 23 февраля</div>
+              </div>
+            </label>
+            <label class="party-checkbox certificate-form__party-checkbox certificate-form__party-checkbox-6">
+              <input class="party-checkbox__input" type="radio" name="certificate-party">
+              <div class="party-checkbox__box">
+                <div class="party-checkbox__icon-wrapper"><img class="party-checkbox__icon--calendar party-checkbox__icon" src="/img/party-6.png" alt="На новый год"></div>
+                <div class="party-checkbox__text">На новый год</div>
+              </div>
+            </label>
+            <!-- TODO: JS to fill process https://stackoverflow.com/questions/18389224/how-to-style-html5-range-input-to-have-different-color-before-and-after-slider-->
+            <div class="certificate-form__sliders">
+              <label class="certificate-slider"><span class="certificate-slider__label">Количество исполнителей</span>
+                <div class="certificate-slider__input js-certificate-slider">
+                  <input class="certificate-slider__input-input" type="range" min="1" max="10" value="1">
+                  <div class="certificate-slider__input-value"><span>1</span></div>
+                </div>
+              </label>
+              <label class="certificate-slider"><span class="certificate-slider__label">Часы звукозаписи</span>
+                <div class="certificate-slider__input js-certificate-slider">
+                  <input class="certificate-slider__input-input" type="range" min="1" max="10" value="1">
+                  <div class="certificate-slider__input-value"><span>1</span></div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="certificate-form__group-2">
+            <label class="simple-checkbox certificate-form__simple-checkbox">
+              <input class="simple-checkbox__input" type="checkbox" name="arrangement"><span class="simple-checkbox__box"></span><span class="simple-checkbox__text">Создание аранжировки</span>
+            </label>
+            <label class="simple-checkbox certificate-form__simple-checkbox">
+              <input class="simple-checkbox__input" type="checkbox" name="arrangement"><span class="simple-checkbox__box"></span><span class="simple-checkbox__text">Написание текста</span>
+            </label>
+            <label class="simple-checkbox certificate-form__simple-checkbox">
+              <input class="simple-checkbox__input" type="checkbox" name="arrangement"><span class="simple-checkbox__box"></span><span class="simple-checkbox__text">Фотосьемка во время записи</span>
+            </label>
+            <label class="simple-checkbox certificate-form__simple-checkbox">
+              <input class="simple-checkbox__input" type="checkbox" name="arrangement"><span class="simple-checkbox__box"></span><span class="simple-checkbox__text">Видеосьемка во время записи</span>
+            </label>
+            <div class="certificate-form__price">5 600 ₽</div>
+          </div>
+          <button class="btn btn--base btn--modal btn--modal-order certificate-form__button">Оставить заявку<span class="btn__accent"></span></button>
+        </form>
+      </div>
+    </div>
+    <div class="articles">
+      <div class="container" data-aos="fade-right" data-aos-duration="800">
+        <h2 class="articles__title">За что вы платите деньги</h2>
+        <div class="articles__carousel">
+          <div class="articles__carousel-inner">
+            <div class="swiper articles-swiper articles__carousel-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="articles-item">
+                    <div class="articles-item__banner"><img class="articles-item__banner-image" src="/img/temp.png" alt="90% студий не готовы тратить время на..."></div>
+                    <div class="articles-item__body">
+                      <h4 class="articles-item__title">90% студий не готовы тратить время на...</h4>
+                      <div class="articles-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
+                    </div><a class="articles-item__button" href="#"><span class="articles-item__button-text">Перейти</span>
+                      <svg class="articles-item__button-icon">
+                        <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="articles-item">
+                    <div class="articles-item__banner"><img class="articles-item__banner-image" src="/img/temp.png" alt="90% студий не готовы тратить время на..."></div>
+                    <div class="articles-item__body">
+                      <h4 class="articles-item__title">90% студий не готовы тратить время на...</h4>
+                      <div class="articles-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
+                    </div><a class="articles-item__button" href="#"><span class="articles-item__button-text">Перейти</span>
+                      <svg class="articles-item__button-icon">
+                        <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="articles-item">
+                    <div class="articles-item__banner"><img class="articles-item__banner-image" src="/img/temp.png" alt="90% студий не готовы тратить время на..."></div>
+                    <div class="articles-item__body">
+                      <h4 class="articles-item__title">90% студий не готовы тратить время на...</h4>
+                      <div class="articles-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
+                    </div><a class="articles-item__button" href="#"><span class="articles-item__button-text">Перейти</span>
+                      <svg class="articles-item__button-icon">
+                        <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="articles-item">
+                    <div class="articles-item__banner"><img class="articles-item__banner-image" src="/img/temp.png" alt="90% студий не готовы тратить время на..."></div>
+                    <div class="articles-item__body">
+                      <h4 class="articles-item__title">90% студий не готовы тратить время на...</h4>
+                      <div class="articles-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
+                    </div><a class="articles-item__button" href="#"><span class="articles-item__button-text">Перейти</span>
+                      <svg class="articles-item__button-icon">
+                        <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="articles-item">
+                    <div class="articles-item__banner"><img class="articles-item__banner-image" src="/img/temp.png" alt="90% студий не готовы тратить время на..."></div>
+                    <div class="articles-item__body">
+                      <h4 class="articles-item__title">90% студий не готовы тратить время на...</h4>
+                      <div class="articles-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
+                    </div><a class="articles-item__button" href="#"><span class="articles-item__button-text">Перейти</span>
+                      <svg class="articles-item__button-icon">
+                        <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="articles-item">
+                    <div class="articles-item__banner"><img class="articles-item__banner-image" src="/img/temp.png" alt="90% студий не готовы тратить время на..."></div>
+                    <div class="articles-item__body">
+                      <h4 class="articles-item__title">90% студий не готовы тратить время на...</h4>
+                      <div class="articles-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </div>
+                    </div><a class="articles-item__button" href="#"><span class="articles-item__button-text">Перейти</span>
+                      <svg class="articles-item__button-icon">
+                        <use xlink:href="/img/arrow-2.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="articles__navigation articles__navigation--next articles__navigation-next">
+              <svg class="articles__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="articles__navigation articles__navigation--prev articles__navigation-prev">
+              <svg class="articles__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="articles__pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="reviews__planet"><img class="reviews__planet-image" src="/img/planet-4.png" alt=""></div>
+      <div class="container reviews__container" data-aos="fade-left" data-aos-duration="800">
+        <h2 class="reviews__title">Отзывы о нас</h2>
+        <div class="reviews__carousel">
+          <div class="reviews__carousel-inner">
+            <div class="swiper reviews-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="reviews-item">
+                    <div class="reviews-item__top">
+                      <div class="reviews-item__avatar"><img class="reviews-item__avatar-image" src="/img/avatar.png" alt="Имя и фамилия"></div>
+                      <div class="reviews-item__group">
+                        <div class="reviews-item__name">Имя и фамилия</div>
+                        <div class="reviews-item__status">Кто он</div>
+                      </div>
+                    </div>
+                    <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-item">
+                    <div class="reviews-item__top">
+                      <div class="reviews-item__avatar"><img class="reviews-item__avatar-image" src="/img/avatar.png" alt="Имя и фамилия"></div>
+                      <div class="reviews-item__group">
+                        <div class="reviews-item__name">Имя и фамилия</div>
+                        <div class="reviews-item__status">Кто он</div>
+                      </div>
+                    </div>
+                    <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-item">
+                    <div class="reviews-item__top">
+                      <div class="reviews-item__avatar"><img class="reviews-item__avatar-image" src="/img/avatar.png" alt="Имя и фамилия"></div>
+                      <div class="reviews-item__group">
+                        <div class="reviews-item__name">Имя и фамилия</div>
+                        <div class="reviews-item__status">Кто он</div>
+                      </div>
+                    </div>
+                    <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews-item">
+                    <div class="reviews-item__top">
+                      <div class="reviews-item__avatar"><img class="reviews-item__avatar-image" src="/img/avatar.png" alt="Имя и фамилия"></div>
+                      <div class="reviews-item__group">
+                        <div class="reviews-item__name">Имя и фамилия</div>
+                        <div class="reviews-item__status">Кто он</div>
+                      </div>
+                    </div>
+                    <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__navigation reviews__navigation--next reviews__navigation-next">
+              <svg class="reviews__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="reviews__navigation reviews__navigation--prev reviews__navigation-prev">
+              <svg class="reviews__navigation-arrow">
+                <use xlink:href="/img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="reviews__pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="container" data-aos="zoom-in" data-aos-duration="800">
+        <h2 class="faq__title">Ответы на частые вопросы</h2>
+        <div class="faq__items">
+          <div class="faq__items-group">
+            <div class="faq-box">
+              <div class="faq-box__question">
+                <h3 class="faq-box__title">Чем мы отличается от других студий?</h3>
+                <svg class="faq-box__icon">
+                  <use xlink:href="/img/arrow-1.svg#arrow"></use>
+                </svg>
+              </div>
+              <p class="faq-box__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus in consequatur placeat debitis.</p>
+            </div>
+            <div class="faq-box">
+              <div class="faq-box__question">
+                <h3 class="faq-box__title">Если мне не понравится?</h3>
+                <svg class="faq-box__icon">
+                  <use xlink:href="/img/arrow-1.svg#arrow"></use>
+                </svg>
+              </div>
+              <p class="faq-box__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus in consequatur placeat debitis.</p>
+            </div>
+            <div class="faq-box">
+              <div class="faq-box__question">
+                <h3 class="faq-box__title">Есть ли у вас парковка?</h3>
+                <svg class="faq-box__icon">
+                  <use xlink:href="/img/arrow-1.svg#arrow"></use>
+                </svg>
+              </div>
+              <p class="faq-box__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus in consequatur placeat debitis.</p>
+            </div>
+          </div>
+          <div class="faq__items-group">
+            <div class="faq-box">
+              <div class="faq-box__question">
+                <h3 class="faq-box__title">Кто является звукорежиссером?</h3>
+                <svg class="faq-box__icon">
+                  <use xlink:href="/img/arrow-1.svg#arrow"></use>
+                </svg>
+              </div>
+              <p class="faq-box__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus in consequatur placeat debitis.</p>
+            </div>
+            <div class="faq-box">
+              <div class="faq-box__question">
+                <h3 class="faq-box__title">Как до вас добраться?</h3>
+                <svg class="faq-box__icon">
+                  <use xlink:href="/img/arrow-1.svg#arrow"></use>
+                </svg>
+              </div>
+              <p class="faq-box__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus in consequatur placeat debitis.</p>
+            </div>
+            <div class="faq-box">
+              <div class="faq-box__question">
+                <h3 class="faq-box__title">Размещаете ли в iTunes?</h3>
+                <svg class="faq-box__icon">
+                  <use xlink:href="/img/arrow-1.svg#arrow"></use>
+                </svg>
+              </div>
+              <p class="faq-box__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus in consequatur placeat debitis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="consultation">
+      <div class="container" data-aos="fade-right" data-aos-duration="800">
+        <h2 class="consultation__title">Не нашли ответ на свой вопрос?</h2>
+        <div class="consultation__subtitle">Оставьте свой номер телефона и мы Вам перезвоним в ближайшее время</div>
+        <form class="consultation__form">
+          <div class="consultation-input consultation__input">
+            <svg class="consultation-input__icon">
+              <use xlink:href="/img/phone.svg#phone"></use>
+            </svg>
+            <input class="consultation-input__input" type="text" name="phone-1" placeholder="Введите свой номер телефона">
+          </div>
+          <button class="btn btn--base consultation__button">Рассчитать стоимость<span class="btn__accent"></span></button>
+        </form>
+      </div>
+    </div>
+    <div class="request">
+      <div class="container request__container" data-aos="fade-left" data-aos-duration="800">
+            <div class="request__decoration"><img class="request__decoration-image" src="/img/vocal-6.png" alt=""></div>
+        <form class="request__form">
+          <h2 class="request__title">Оставьте заявку прямо сейчас</h2>
+          <div class="request__subtitle">Мы верим в то, что вы можете стать звездой и хотим помочь в достижении ваших целей!</div>
+              <div class="request__decoration request__decoration--mobile"><img class="request__decoration-image" src="/img/vocal-6.png" alt=""></div>
+          <div class="request__form-main">
+            <div class="request__date-time-group">
+              <label class="form-field"><img class="form-field__icon" src="/img/calendar.png" alt="">
+                <input class="form-field__input js-request-input-date" type="date">
+              </label>
+              <label class="form-field"><img class="form-field__icon" src="/img/clock.png" alt="">
+                <input class="form-field__input" type="number" placeholder="Время">
+              </label>
+            </div>
+            <div class="form-field">
+              <svg class="form-field__icon form-field__icon--phone">
+                <use xlink:href="/img/phone.svg#phone"></use>
+              </svg>
+              <input class="form-field__input" type="number" placeholder="Введите номер телефона">
+            </div>
+            <button class="btn btn--base request__form-button">Отправить заявку<span class="btn__accent"></span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__map">
+          <!--script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab553eaa5bdcf4fdc9d7e079da5103dbf94c64eb8ee43ff9c6d74ade992b735bd&amp;width=800&amp;height=366&amp;lang=ru_UA&amp;scroll=true")-->
+          <!--iframe(
+          src="https://yandex.ua/map-widget/v1/?um=constructor%3Ab553eaa5bdcf4fdc9d7e079da5103dbf94c64eb8ee43ff9c6d74ade992b735bd&amp;source=constructor"
+          width="800"
+          height="366"
+          frameborder="0"
+          -->
+          <!--).contacts-map--><img class="contacts__map-image" src="/img/map.png" alt="">
+          <div class="contacts-cloud contacts__cloud">
+            <div class="contacts-cloud__item">
+              <svg class="contacts-cloud__item-icon contacts-cloud__item-icon--phone">
+                <use xlink:href="/img/phone.svg#phone"></use>
+              </svg>+7 (499) 390-16-86
+            </div>
+            <div class="contacts-cloud__item"><img class="contacts-cloud__item-icon" src="/img/metro.png" alt="">Дербеневская набережная<br>13/17 к 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container" data-aos="fade-up" data-aos-duration="800">
+        <div class="footer__top">
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Главная</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Трек за 2 450р</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Ваш голос</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Наши треки</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Процесс работы</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Наше оборудование</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">С кем мы работали</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Наши видео</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Сервис</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Наши тарифы</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Подарочный сертификат</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">За что вы платите</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">FAQ</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Отзывы о нас</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Узнать стоимость</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__logo"><img class="footer__logo-image" src="/img/logo.png" alt="Landing Spacebase">
+            <div class="footer__logo-text">ООО<br>«Энциклопедия<br>звука»</div>
+          </div>
+          <div class="footer__soc-links"><a class="footer__soc-links-item" href="#">
+              <svg class="footer__soc-links-item-image footer__soc-links-item-image--vk">
+                <use xlink:href="/img/sl-vk.svg#sl-vk"></use>
+              </svg></a><a class="footer__soc-links-item" href="#">
+              <svg class="footer__soc-links-item-image footer__soc-links-item-image--instagram">
+                <use xlink:href="/img/sl-instagram.svg#sl-instagram"></use>
+              </svg></a><a class="footer__soc-links-item" href="#">
+              <svg class="footer__soc-links-item-image footer__soc-links-item-image--ok">
+                <use xlink:href="/img/sl-ok.svg#sl-ok"></use>
+              </svg></a><a class="footer__soc-links-item" href="#">
+              <svg class="footer__soc-links-item-image footer__soc-links-item-image--facebook">
+                <use xlink:href="/img/sl-facebook.svg#sl-facebook"></use>
+              </svg></a><a class="footer__soc-links-item" href="#">
+              <svg class="footer__soc-links-item-image footer__soc-links-item-image--youtube">
+                <use xlink:href="/img/sl-youtube.svg#sl-youtube"></use>
+              </svg></a>
+          </div><a class="footer__phone" href="tel:+88002342125" rel="nofollow">8 800 234 21 25</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Модальное окно-->
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-window modal-window--order">
+        <h3 class="modal-window__title">Оставьте заявку</h3>
+        <p class="modal-window__descr">И мы перезвоним вам в течении 5 минут</p>
+        <form class="modal-window__form" action="#">
+          <input class="modal-window__form-input" type="text" name="name" placeholder="Имя">
+          <input class="modal-window__form-input" type="text" name="phone" placeholder="Телефон">
+          <button class="btn btn--base btn--modal-form" type="submit">ОСТАВИТЬ ЗАЯВКУ<span class="btn__accent"></span></button>
+        </form>
+      </div>
+      <div class="modal-window modal-window--privacy">
+        <h3 class="modal-window__title">Политика конфиденциальности</h3>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+        <p class="modal-window__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex ab voluptas reprehenderit adipisci! Veniam ad impedit temporibus atque rem, amet fugiat voluptas pariatur reprehenderit!</p>
+      </div>
+    </div>
+    <!-- Подключение скриптов-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="./js/swiper-bundle.min.js" defer=""></script>
+    <script src="./js/aos.js" defer=""></script>
+    <!--// lightgallery-->
+    <!--script(src='./js/lightGallary/lightgallery.min.js' defer='')-->
+    <!--script(src='./js/lightGallary/lg-thumbnails.js' defer='')-->
+    <!--script(src='https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js' defer='')-->
+    <!--script(src='https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js' defer='')-->
+    <!--script(src='https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js' defer='')-->
+    <!--script(src='./js/video.js' defer='')-->
+    <!--script(src='./js/quiz.js' defer='')-->
+    <script src="./js/custom-player.js" defer=""></script>
+    <script src="./js/app.js" defer=""></script>
+  </body>
+</html>
