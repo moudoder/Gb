@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		return false;
 	})
 
+	$('.portfolio-new-dots__btn').on('click', function() {
+		
+	})
+
 	// Переключение активных блоков в "расчете стоимости"
 	$('.calculation-block').on('click', function() {
 		$('.calculation-block').removeClass('calculation-block-active');

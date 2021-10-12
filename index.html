@@ -5,14 +5,14 @@
     <title>Project name</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Описание проекта">
-    <link rel="icon" href="./img/favicon.ico">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/aos.css">
     <!-- Кастомые анимации-->
-    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="css/animation.css">
     <!-- / Кастомые анимации-->
-    <link rel="stylesheet" href="./css/lightgallery.min.css">
-    <link rel="stylesheet" href="./css/front.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/front.css">
   </head>
   <body>
     <div class="modal-equipment">
@@ -447,7 +447,7 @@
             <input class="portfolio__tabs-item-input" type="radio" name="portfolio-type" onchange="portfolioChange('before_after')"><span class="portfolio__tabs-item-box">До/После</span>
           </label>
         </div>
-        <div class="portfolio-new">
+        <div class="portfolio-new portfolio-new-active">
 
           <div class="portfolio-new-top">
             <div class="portfolio-new-top-left">
@@ -507,7 +507,7 @@
                   </p>
                 </div>
                 <a href="#" class="portfolio-new__btn">
-                  Как звучит у нас
+                  
                   <img src="img/magic-wand_копия_2.png" alt="">
                 </a>
               </div>
@@ -552,7 +552,7 @@
                   </p>
                 </div>
                 <a href="#" class="portfolio-new__btn">
-                  Как звучит у нас
+                  
                   <img src="img/magic-wand_копия_2.png" alt="">
                 </a>
               </div>
@@ -597,7 +597,7 @@
                   </p>
                 </div>
                 <a href="#" class="portfolio-new__btn">
-                  Как звучит у нас
+                  
                   <img src="img/magic-wand_копия_2.png" alt="">
                 </a>
               </div>
@@ -642,85 +642,16 @@
                   </p>
                 </div>
                 <a href="#" class="portfolio-new__btn">
-                  Как звучит у нас
-                  <img src="img/magic-wand_копия_2.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="portfolio-new-line">
-              <div class="portfolio-new__count">
-                5
-              </div>
-              <div class="portfolio-new-left">
-                <div class="portfolio-new-avatar">
-                  <img src="img/avtr.png" alt="">
-                </div>
-                <div class="portfolio-new-text">
-                  <h3 class="portfolio-new__title">
-                    Track 1
-                  </h3>
-                  <h4 class="portfolio-new__subtitle">
-                    Lil nas X
-                  </h4>
-                </div>
-              </div>
-              
-              <div class="portfolio-new__album">
-                <span class="portfolio-new__album__text">
-                  MONTERO
-                </span>
-              </div>
-              <div class="portfolio-new__duration">
-                <span class="portfolio-new__duration__text">
-                  3:32
-                </span>
-              </div>
-              <div class="portfolio-new__right">
-                <div class="portfolio-new-block">
-                  <p class="portfolio-new-block__text">
-                    Чтобы почуствовать качество 
-                    нашего звука, нажмите на <img src="img/magic-wand_копия.png" alt="">
-                    <br>
-                    <span class="portfolio-new-block__span">
-                      ОК
-                    </span>
-                  </p>
-                </div>
-                <a href="#" class="portfolio-new__btn">
-                  Как звучит у нас
+                  
                   <img src="img/magic-wand_копия_2.png" alt="">
                 </a>
               </div>
             </div>
           </div>
           <div class="portfolio-new-dots portfolio-new-dots-wrapper">
-            <div class="portfolio-new-arrows">
-              <a href="#" class="portfolio-new-arrow portfolio-new-arrow__left">
-                <img src="img/next_(1).png" alt="">
-                Назад
-              </a>
-              <div class="portfolio-new-dots">
-                <a href="#" class="portfolio-new-dot portfolio-new-dot__active">
-                  1
-                </a>
-                <a href="#" class="portfolio-new-dot">
-                  2
-                </a>
-                <a href="#" class="portfolio-new-dot">
-                  3
-                </a>
-                <a href="#" class="portfolio-new-dot">
-                  4
-                </a>
-                <a href="#" class="portfolio-new-dot">
-                  5
-                </a>
-              </div>
-              <a href="#" class="portfolio-new-arrow portfolio-new-arrow__right">
-                Вперед
-                <img src="img/next_(1) (1).png" alt="">
-              </a>
-            </div>
+            <a href="#" class="process__button btn--base btn portfolio-new-dots__btn">
+              Показат все треки
+            </a>
           </div>
         </div>
         <!-- TODO: independent carousels. JS make live only one of them due to class selector-->
@@ -2288,14 +2219,12 @@
       <div class="container">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__map">
-          <!--script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab553eaa5bdcf4fdc9d7e079da5103dbf94c64eb8ee43ff9c6d74ade992b735bd&amp;width=800&amp;height=366&amp;lang=ru_UA&amp;scroll=true")-->
-          <!--iframe(
-          src="https://yandex.ua/map-widget/v1/?um=constructor%3Ab553eaa5bdcf4fdc9d7e079da5103dbf94c64eb8ee43ff9c6d74ade992b735bd&amp;source=constructor"
-          width="800"
-          height="366"
-          frameborder="0"
-          -->
-          <!--).contacts-map--><img class="contacts__map-image" src="./img/map.png" alt="">
+          <div class="contacts__map_script">
+
+
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0fa6181c2dc98682f1beaec4cb6ef13637a78d4a3c443a8216bec1f1fbfd6626&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+          </div>
+          
           <div class="contacts-cloud contacts__cloud">
             <div class="contacts-cloud__item">
               <svg class="contacts-cloud__item-icon contacts-cloud__item-icon--phone">
@@ -2383,8 +2312,8 @@
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"></script>
-    <script src="./js/swiper-bundle.min.js" defer=""></script>
-    <script src="./js/aos.js" defer=""></script>
+    <script src="/js/swiper-bundle.min.js" defer=""></script>
+    <script src="/js/aos.js" defer=""></script>
     <!--// lightgallery-->
     <!--script(src='./js/lightGallary/lightgallery.min.js' defer='')-->
     <!--script(src='./js/lightGallary/lg-thumbnails.js' defer='')-->
@@ -2393,7 +2322,7 @@
     <!--script(src='https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js' defer='')-->
     <!--script(src='./js/video.js' defer='')-->
     <!--script(src='./js/quiz.js' defer='')-->
-    <script src="./js/custom-player.js" defer=""></script>
-    <script src="./js/app.js" defer=""></script>
+    <script src="/js/custom-player.js" defer=""></script>
+    <script src="/js/app.js" defer=""></script>
   </body>
 </html>
