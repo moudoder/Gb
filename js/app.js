@@ -24,6 +24,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	})
 
+	
+	$('.clients__navigation-next').on('click', function() {
+		$('.clients__pagination_news__dot').removeClass('clients__pagination_news__dot_active')
+		$('.dt-2').addClass('clients__pagination_news__dot_active')
+	})
+
+	$('.clients__navigation-prev').on('click', function() {
+		$('.clients__pagination_news__dot').removeClass('clients__pagination_news__dot_active')
+		$('.dt-1').addClass('clients__pagination_news__dot_active')
+	})
+
+	$('.dt-1').on('click', function() {
+		$('.clients__navigation-prev').click()
+	})
+	$('.dt-2').on('click', function() {
+		$('.clients__navigation-next').click()
+	})
 	// Закрытие модального окна "полный список оборудывание"
 	jQuery(function($){
 		$(document).mouseup(function (e){ // событие клика по веб-документу
