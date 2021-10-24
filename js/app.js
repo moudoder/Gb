@@ -8,6 +8,18 @@ document.addEventListener("DOMContentLoaded", function() {
 	$('.portfolio-new-dots__btn').on('click', function() {
 		
 	})
+	let vous_counter = 0;
+	$('.your-voice__navigation-arrow').on('click', function() {
+		$('.your-voice__decoration-image').removeClass('your-voice__decoration-image_active')
+		if (vous_counter == 0) {
+			vous_counter = 1;
+			$('.voice__decoration_2').addClass('your-voice__decoration-image_active')
+		}
+		else{
+			vous_counter = 0;
+			$('.voice__decoration_1').addClass('your-voice__decoration-image_active')
+		}
+	})
 
 	// Переключение активных блоков в "расчете стоимости"
 	$('.calculation-block').on('click', function() {
@@ -17,10 +29,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	$('.portfolio__tabs-item').on('click', function() {
 		$('.portfolio-new').removeClass('portfolio-new-active');
+		$('.portfolio-new_2').removeClass('portfolio-new_2_active');
 
 	})
 	$('.portfolio__tabs-item-3').on('click', function() {
 		$('.portfolio-new').addClass('portfolio-new-active');
+
+	})
+
+	$('.portfolio__tabs-item-2').on('click', function() {
+		$('.portfolio-new_2').addClass('portfolio-new_2_active');
 
 	})
 
@@ -470,26 +488,26 @@ document.addEventListener("DOMContentLoaded", function() {
 		},
 		breakpoints: {
 			992: {
-				slidesPerView: 2,
+				slidesPerView: 3,
 				spaceBetween: 25
 			},
 			1200: {
 				spaceBetween: 50,
-				slidesPerView: 2
+				slidesPerView: 3
 			}
 		}
 	});
 
-	const dateField = document.querySelector('.js-request-input-date')
-
-	const today = new Date()
-	const year = today.getFullYear()
-	const month = today.getMonth() + 1
-	const day = today.getDate() + 7 // Today + 7 days
-
-	const todayFormatted = year + '-' + (month > 9 ? '' : '0') + month + '-' + (day > 9 ? '' : '0') + day
-	dateField.value = todayFormatted
-
+	$('.form-field__input_time').datetimepicker({
+		datepicker:false,
+		format:'H:i',
+		theme: 'dark'
+	});
+	$('.js-request-input-date').datetimepicker({
+		timepicker:false,
+		format:'d.m.Y',
+		theme: 'dark'
+	});
 
 	// Custom Select
 	var x, i, j, l, ll, selElmnt, a, b, c;

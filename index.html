@@ -13,6 +13,9 @@
     <!-- / Кастомые анимации-->
     <link rel="stylesheet" href="css/lightgallery.min.css">
     <link rel="stylesheet" href="css/front.css">
+    <link rel="stylesheet" type="text/css" href="datetimepicker-master/build/jquery.datetimepicker.min.css"/ >
+
+    
   </head>
   <body>
     <div class="modal-equipment">
@@ -65,6 +68,7 @@
     <header class="header" data-aos="fade-down" data-aos-duration="800">
       <div class="container">
         <div class="wrap header__wrap">
+          <div class="header__wrap_lft">
           <!-- Логотип--><a class="header__logo" href="#"><img class="header__logo-img" src="./img/logo.png" alt="Logo"></a>
           <!-- Навигация-->
           <nav class="header__nav">
@@ -75,6 +79,7 @@
               <li class="header__nav-list-item"><a class="header__nav-list-link" href="#">Отзывы</a></li>
             </ul>
           </nav>
+          </div>
           <!-- Выпадающий список региона-->
           <!--.header__region-->
           <!--    img(src="./img/location.png" alt="").header__region-icon-->
@@ -148,21 +153,21 @@
     <div class="about-us">
       <div class="container about-us__container">
         <div class="about-us-item about-us__item about-us__item-1" data-aos="fade-right" data-aos-duration="800">
-          <div class="about-us-item__stat"><img class="about-us-item__stat-icon" src="./img/ear-1.png" alt="Две студии">
+          <div class="about-us-item__stat"><img class="about-us-item__stat-icon" src="./img/planet-1.png" alt="Две студии">
             <div class="about-us-item__stat-value">2</div>
           </div>
           <h4 class="about-us-item__title">Две студии</h4>
           <div class="about-us-item__text">Мы работаем в двух городах: Москва и Омск</div>
         </div>
         <div class="about-us-item about-us__item about-us__item-2" data-aos="fade-up" data-aos-duration="800">
-          <div class="about-us-item__stat"><img class="about-us-item__stat-icon" src="./img/ear-2.png" alt="10 сотрудников">
+          <div class="about-us-item__stat"><img class="about-us-item__stat-icon" src="./img/planet-2.png" alt="10 сотрудников">
             <div class="about-us-item__stat-value">10</div>
           </div>
           <h4 class="about-us-item__title">10 сотрудников</h4>
           <div class="about-us-item__text">В нашем штате работает 10 сотрудников</div>
         </div>
         <div class="about-us-item about-us__item about-us__item-3" data-aos="fade-left" data-aos-duration="800">
-          <div class="about-us-item__stat"><img class="about-us-item__stat-icon" src="./img/ear-3.png" alt="Работаем с 2013 года">
+          <div class="about-us-item__stat"><img class="about-us-item__stat-icon" src="./img/planet-3.png" alt="Работаем с 2013 года">
             <div class="about-us-item__stat-value">13</div>
           </div>
           <h4 class="about-us-item__title">Работаем с 2013 года</h4>
@@ -340,59 +345,79 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                         <div class="audio-2 js-audio">
-                          <audio class="js-audio__audio" src="/sounds/kipher__goons.mp4"></audio>
+                          <audio class="js-audio__audio" src="/sounds/two_neighbors__never_talk_to_me_again.mp4"></audio>
                           <!-- Cover?-->
                           <div class="audio-2__cover"><img class="audio-2__cover-image" src="./img/disk.png" alt=""></div>
                           <div class="audio-2__title">Wrecking Ball</div>
-                          <div class="audio-2__duration-time-actual js-audio__duration-time-actual">00:00</div>
-                          <div class="audio-2__controls">
-                            <button class="audio-2__fast audio-2__fast-backwards js-audio__fast-backwards">
-                              <svg class="audio-2__fast-icon audio-2__fast-icon--reverse">
-                                <use xlink:href="./img/fast-forward.svg#fast"></use>
-                              </svg>
-                            </button>
-                            <button class="audio-2__play js-audio__play">
-                              <svg class="audio-2__play-icon audio-2__play-icon--play">
-                                <use xlink:href="./img/play.svg#play"></use>
-                              </svg>
-                              <svg class="audio-2__play-icon audio-2__play-icon--pause">
-                                <use xlink:href="./img/pause.svg#pause"></use>
-                              </svg>
-                            </button>
-                            <button class="audio-2__fast audio-2__fast-forwards js-audio__fast-forwards">
-                              <svg class="audio-2__fast-icon">
-                                <use xlink:href="./img/fast-forward.svg#fast"></use>
-                              </svg>
-                            </button>
+                          
+                          <div class="audio-3 js-audio your-voice__item-audio">
+                            
+                            <div class="audio-3__header">
+                              <div class="audio-3__title" style="visibility: hidden;">До</div>
+                              <div class="audio-2__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                            </div>
+                            <div class="audio-3__duration">
+                              <input class="audio-3__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                            </div>
+                            <div class="audio-3__controls">
+                              <button class="audio-3__fast audio-3__fast-backwards js-audio__fast-backwards">
+                                <svg class="audio-3__fast-icon audio-3__fast-icon--reverse">
+                                  <use xlink:href="./img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__play js-audio__play">
+                                <svg class="audio-3__play-icon audio-3__play-icon--play">
+                                  <use xlink:href="./img/play.svg#play"></use>
+                                </svg>
+                                <svg class="audio-3__play-icon audio-3__play-icon--pause">
+                                  <use xlink:href="./img/pause.svg#pause"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__fast audio-3__fast-forwards js-audio__fast-forwards">
+                                <svg class="audio-3__fast-icon">
+                                  <use xlink:href="./img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                            </div>
                           </div>
                         </div>
                   </div>
                   <div class="swiper-slide">
                         <div class="audio-2 js-audio">
-                          <audio class="js-audio__audio" src="/sounds/layto__beauty.mp4"></audio>
+                          <audio class="js-audio__audio" src="/sounds/two_neighbors__never_talk_to_me_again.mp4"></audio>
                           <!-- Cover?-->
                           <div class="audio-2__cover"><img class="audio-2__cover-image" src="./img/disk.png" alt=""></div>
                           <div class="audio-2__title">Wrecking Ball</div>
-                          <div class="audio-2__duration-time-actual js-audio__duration-time-actual">00:00</div>
-                          <div class="audio-2__controls">
-                            <button class="audio-2__fast audio-2__fast-backwards js-audio__fast-backwards">
-                              <svg class="audio-2__fast-icon audio-2__fast-icon--reverse">
-                                <use xlink:href="./img/fast-forward.svg#fast"></use>
-                              </svg>
-                            </button>
-                            <button class="audio-2__play js-audio__play">
-                              <svg class="audio-2__play-icon audio-2__play-icon--play">
-                                <use xlink:href="./img/play.svg#play"></use>
-                              </svg>
-                              <svg class="audio-2__play-icon audio-2__play-icon--pause">
-                                <use xlink:href="./img/pause.svg#pause"></use>
-                              </svg>
-                            </button>
-                            <button class="audio-2__fast audio-2__fast-forwards js-audio__fast-forwards">
-                              <svg class="audio-2__fast-icon">
-                                <use xlink:href="./img/fast-forward.svg#fast"></use>
-                              </svg>
-                            </button>
+                          
+                          <div class="audio-3 js-audio your-voice__item-audio">
+                            
+                            <div class="audio-3__header">
+                              <div class="audio-3__title" style="visibility: hidden;">До</div>
+                              <div class="audio-2__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                            </div>
+                            <div class="audio-3__duration">
+                              <input class="audio-3__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                            </div>
+                            <div class="audio-3__controls">
+                              <button class="audio-3__fast audio-3__fast-backwards js-audio__fast-backwards">
+                                <svg class="audio-3__fast-icon audio-3__fast-icon--reverse">
+                                  <use xlink:href="./img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__play js-audio__play">
+                                <svg class="audio-3__play-icon audio-3__play-icon--play">
+                                  <use xlink:href="./img/play.svg#play"></use>
+                                </svg>
+                                <svg class="audio-3__play-icon audio-3__play-icon--pause">
+                                  <use xlink:href="./img/pause.svg#pause"></use>
+                                </svg>
+                              </button>
+                              <button class="audio-3__fast audio-3__fast-forwards js-audio__fast-forwards">
+                                <svg class="audio-3__fast-icon">
+                                  <use xlink:href="./img/fast-forward.svg#fast"></use>
+                                </svg>
+                              </button>
+                            </div>
                           </div>
                         </div>
                   </div>
@@ -415,17 +440,17 @@
                 <h3 class="services__title">Мы знаем как получить<br>готовую песню за 2 450р</h3>
             <div class="services__list-label">В услугу входит:</div>
             <ul class="services__list">
-              <li class="services__list-item">- Аренда студии со всем оборудованием</li>
-              <li class="services__list-item">- Работа с нашим лучшим звукорежиссером</li>
-              <li class="services__list-item">- Запись песни, сведение, мастеринг</li>
-              <li class="services__list-item">- Все делаем сразу при вас</li>
+              <li class="services__list-item"><span>-</span> Аренда студии со всем оборудованием</li>
+              <li class="services__list-item"><span>-</span> Работа с нашим лучшим звукорежиссером</li>
+              <li class="services__list-item"><span>-</span> Запись песни, сведение, мастеринг</li>
+              <li class="services__list-item"><span>-</span> Все делаем сразу при вас</li>
             </ul>
             <div class="services__list-label">Дополнительно:</div>
             <ul class="services__list">
-              <li class="services__list-item">- Написание текста</li>
-              <li class="services__list-item">- Создание аранжировки</li>
-              <li class="services__list-item">- Работа с саунд продюссером</li>
-              <li class="services__list-item">- Видео съемка во время записи</li>
+              <li class="services__list-item"><span>-</span> Написание текста</li>
+              <li class="services__list-item"><span>-</span> Создание аранжировки</li>
+              <li class="services__list-item"><span>-</span> Работа с саунд продюссером</li>
+              <li class="services__list-item"><span>-</span> Видео съемка во время записи</li>
             </ul>
             <button class="btn btn--base btn--modal btn--modal-order services__button">Забронировать время записи<span class="btn__accent"></span></button>
           </div>
@@ -440,7 +465,7 @@
           <label class="portfolio__tabs-item">
             <input class="portfolio__tabs-item-input" type="radio" name="portfolio-type" checked onchange="portfolioChange('pop')"><span class="portfolio__tabs-item-box">Pop</span>
           </label>
-          <label class="portfolio__tabs-item">
+          <label class="portfolio__tabs-item portfolio__tabs-item-2">
             <input class="portfolio__tabs-item-input" type="radio" name="portfolio-type" onchange="portfolioChange('rap')"><span class="portfolio__tabs-item-box">Rap</span>
           </label>
           <label class="portfolio__tabs-item portfolio__tabs-item-3">
@@ -756,6 +781,164 @@
             </a>
           </div>
         </div>
+        <div class="portfolio-new_2">
+          <div class="portfolio__carousel-inner">
+            <div class="swiper portfolio-swiper portfolio__carousel-swiper" data-type="pop">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                      <div class="audio-1 js-audio portfolio__item">
+                        <audio class="js-audio__audio" src="/sounds/arrested_youth__mirrors.mp4"></audio>
+                        <div class="audio-1__track-cover"><img class="audio-1__track-cover-image" src="./img/album.png" alt=""></div>
+                        <div class="audio-1__duration">
+                          <input class="audio-1__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="audio-1__duration-time">
+                          <div class="audio-1__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-1__duration-time-full js-audio__duration-time-full">00:00</div>
+                        </div>
+                        <div class="audio-1__title">Грустная песня</div>
+                        <div class="audio-1__artist">TRILL PILL, Крид, MORGENSHTERN</div>
+                        <div class="audio-1__controls">
+                          <button class="audio-1__fast audio-1__fast-backwards js-audio__fast-backwards">
+                            <svg class="audio-1__fast-icon audio-1__fast-icon--reverse">
+                              <use xlink:href="./img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__play js-audio__play">
+                            <svg class="audio-1__play-icon audio-1__play-icon--play">
+                              <use xlink:href="./img/play.svg#play"></use>
+                            </svg>
+                            <svg class="audio-1__play-icon audio-1__play-icon--pause">
+                              <use xlink:href="./img/pause.svg#pause"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__fast audio-1__fast-forwards js-audio__fast-forwards">
+                            <svg class="audio-1__fast-icon">
+                              <use xlink:href="./img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="audio-1 js-audio portfolio__item">
+                        <audio class="js-audio__audio" src="/sounds/aviva__hypnotized.mp4"></audio>
+                        <div class="audio-1__track-cover"><img class="audio-1__track-cover-image" src="./img/album.png" alt=""></div>
+                        <div class="audio-1__duration">
+                          <input class="audio-1__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="audio-1__duration-time">
+                          <div class="audio-1__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-1__duration-time-full js-audio__duration-time-full">00:00</div>
+                        </div>
+                        <div class="audio-1__title">Грустная песня</div>
+                        <div class="audio-1__artist">TRILL PILL, Крид, MORGENSHTERN</div>
+                        <div class="audio-1__controls">
+                          <button class="audio-1__fast audio-1__fast-backwards js-audio__fast-backwards">
+                            <svg class="audio-1__fast-icon audio-1__fast-icon--reverse">
+                              <use xlink:href="./img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__play js-audio__play">
+                            <svg class="audio-1__play-icon audio-1__play-icon--play">
+                              <use xlink:href="./img/play.svg#play"></use>
+                            </svg>
+                            <svg class="audio-1__play-icon audio-1__play-icon--pause">
+                              <use xlink:href="./img/pause.svg#pause"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__fast audio-1__fast-forwards js-audio__fast-forwards">
+                            <svg class="audio-1__fast-icon">
+                              <use xlink:href="./img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="audio-1 js-audio portfolio__item">
+                        <audio class="js-audio__audio" src="/sounds/the_tech_thieves__fall.mp4"></audio>
+                        <div class="audio-1__track-cover"><img class="audio-1__track-cover-image" src="./img/album.png" alt=""></div>
+                        <div class="audio-1__duration">
+                          <input class="audio-1__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="audio-1__duration-time">
+                          <div class="audio-1__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-1__duration-time-full js-audio__duration-time-full">00:00</div>
+                        </div>
+                        <div class="audio-1__title">Грустная песня</div>
+                        <div class="audio-1__artist">TRILL PILL, Крид, MORGENSHTERN</div>
+                        <div class="audio-1__controls">
+                          <button class="audio-1__fast audio-1__fast-backwards js-audio__fast-backwards">
+                            <svg class="audio-1__fast-icon audio-1__fast-icon--reverse">
+                              <use xlink:href="./img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__play js-audio__play">
+                            <svg class="audio-1__play-icon audio-1__play-icon--play">
+                              <use xlink:href="./img/play.svg#play"></use>
+                            </svg>
+                            <svg class="audio-1__play-icon audio-1__play-icon--pause">
+                              <use xlink:href="./img/pause.svg#pause"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__fast audio-1__fast-forwards js-audio__fast-forwards">
+                            <svg class="audio-1__fast-icon">
+                              <use xlink:href="./img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <div class="audio-1 js-audio portfolio__item">
+                        <audio class="js-audio__audio" src="/sounds/kops__part_of_life.mp4"></audio>
+                        <div class="audio-1__track-cover"><img class="audio-1__track-cover-image" src="./img/album.png" alt=""></div>
+                        <div class="audio-1__duration">
+                          <input class="audio-1__duration-range js-audio__duration" type="range" min="0" max="100" value="0">
+                        </div>
+                        <div class="audio-1__duration-time">
+                          <div class="audio-1__duration-time-actual js-audio__duration-time-actual">00:00</div>
+                          <div class="audio-1__duration-time-full js-audio__duration-time-full">00:00</div>
+                        </div>
+                        <div class="audio-1__title">Грустная песня</div>
+                        <div class="audio-1__artist">TRILL PILL, Крид, MORGENSHTERN</div>
+                        <div class="audio-1__controls">
+                          <button class="audio-1__fast audio-1__fast-backwards js-audio__fast-backwards">
+                            <svg class="audio-1__fast-icon audio-1__fast-icon--reverse">
+                              <use xlink:href="./img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__play js-audio__play">
+                            <svg class="audio-1__play-icon audio-1__play-icon--play">
+                              <use xlink:href="./img/play.svg#play"></use>
+                            </svg>
+                            <svg class="audio-1__play-icon audio-1__play-icon--pause">
+                              <use xlink:href="./img/pause.svg#pause"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-1__fast audio-1__fast-forwards js-audio__fast-forwards">
+                            <svg class="audio-1__fast-icon">
+                              <use xlink:href="./img/fast-forward.svg#fast"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__navigation portfolio__navigation--next portfolio__navigation-next">
+              <svg class="portfolio__navigation-arrow">
+                <use xlink:href="./img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="portfolio__navigation portfolio__navigation--prev portfolio__navigation-prev">
+              <svg class="portfolio__navigation-arrow">
+                <use xlink:href="./img/arrow-2.svg#arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
         <!-- TODO: independent carousels. JS make live only one of them due to class selector-->
         <div class="portfolio__carousel active" data-type="pop">
           <div class="portfolio__carousel-inner">
@@ -929,7 +1112,10 @@
             <h2 class="your-voice__title">Ваш голос</h2>
             <div class="your-voice__subtitle">Технологии нашей студии позволяют сделать вокал идеальным</div>
             <div class="your-voice__tagline">Уметь петь не обязательно</div>
-                <div class="your-voice__decoration your-voice__decoration--mobile"><img class="your-voice__decoration-image" src="./img/vocal-2.png" alt=""></div>
+                <div class="your-voice__decoration your-voice__decoration--mobile">
+                  <img class="voice__decoration_1 your-voice__decoration-image your-voice__decoration-image_active" src="./img/vocal-2.png" alt="">
+                                  <img src="img/img-2-devka.png" alt="" class="your-voice__decoration-image voice__decoration_2">
+                </div>
             <div class="your-voice__carousel">
               <div class="swiper your-voice-swiper your-voice__carousel-swiper">
                 <div class="swiper-wrapper">
@@ -1128,19 +1314,22 @@
                 </div>
               </div>
               <div class="your-voice__navigation your-voice__navigation--next your-voice__navigation-next">
-                <svg class="your-voice__navigation-arrow">
+                <svg class="your-voice__navigation-arrow vc-nav__right">
                   <use xlink:href="./img/arrow-2.svg#arrow"></use>
                 </svg>
               </div>
               <div class="your-voice__navigation your-voice__navigation--prev your-voice__navigation-prev">
-                <svg class="your-voice__navigation-arrow">
+                <svg class="your-voice__navigation-arrow vc-nav__left">
                   <use xlink:href="./img/arrow-2.svg#arrow"></use>
                 </svg>
               </div>
             </div>
             <button class="btn btn--base btn--modal btn--modal-order your-voice__button">Заказать запись<span class="btn__accent"></span></button>
           </div>
-              <div class="your-voice__decoration"><img class="your-voice__decoration-image" src="./img/vocal-2.png" alt=""></div>
+              <div class="your-voice__decoration">
+                <img class="voice__decoration_1 your-voice__decoration-image your-voice__decoration-image_active" src="./img/vocal-2.png" alt="">
+                <img src="img/img-2-devka.png" alt="" class="your-voice__decoration-image voice__decoration_2">
+              </div>
         </div>
       </div>
     </div>
@@ -2145,57 +2334,70 @@
     <div class="reviews">
       <div class="reviews__planet"><img class="reviews__planet-image" src="./img/planet-4.png" alt=""></div>
       <div class="container reviews__container" data-aos="fade-left" data-aos-duration="800">
-        <h2 class="reviews__title">Отзывы о нас</h2>
+        <h2 class="reviews__title">Отзывы о нашей студии</h2>
+        <div class="tariffs__subtitle">Мы очень благодарны за хвалебные отзывы от <br> наших клиентов. Вот некоторые из них</div>
         <div class="reviews__carousel">
           <div class="reviews__carousel-inner">
             <div class="swiper reviews-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="reviews-item">
-                    <div class="reviews-item__top">
-                      <div class="reviews-item__avatar"><img class="reviews-item__avatar-image" src="./img/avatar.png" alt="Имя и фамилия"></div>
-                      <div class="reviews-item__group">
-                        <div class="reviews-item__name">Имя и фамилия</div>
-                        <div class="reviews-item__status">Кто он</div>
+                    <div class="reviews-item_new_avatar"></div>
+                    <div class="reviews-item__text_wrp">
+                      <div class="reviews-item__top">
+                        <div class="reviews-item__group">
+                          <div class="reviews-item__name">Имя и фамилия</div>
+                          
+                        </div>
                       </div>
+                      <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </div>
                     </div>
-                    <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                   
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="reviews-item">
-                    <div class="reviews-item__top">
-                      <div class="reviews-item__avatar"><img class="reviews-item__avatar-image" src="./img/avatar.png" alt="Имя и фамилия"></div>
-                      <div class="reviews-item__group">
-                        <div class="reviews-item__name">Имя и фамилия</div>
-                        <div class="reviews-item__status">Кто он</div>
+                    <div class="reviews-item_new_avatar"></div>
+                    <div class="reviews-item__text_wrp">
+                      <div class="reviews-item__top">
+                        <div class="reviews-item__group">
+                          <div class="reviews-item__name">Имя и фамилия</div>
+                          
+                        </div>
                       </div>
+                      <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </div>
                     </div>
-                    <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                   
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="reviews-item">
-                    <div class="reviews-item__top">
-                      <div class="reviews-item__avatar"><img class="reviews-item__avatar-image" src="./img/avatar.png" alt="Имя и фамилия"></div>
-                      <div class="reviews-item__group">
-                        <div class="reviews-item__name">Имя и фамилия</div>
-                        <div class="reviews-item__status">Кто он</div>
+                    <div class="reviews-item_new_avatar"></div>
+                    <div class="reviews-item__text_wrp">
+                      <div class="reviews-item__top">
+                        <div class="reviews-item__group">
+                          <div class="reviews-item__name">Имя и фамилия</div>
+                          
+                        </div>
                       </div>
+                      <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </div>
                     </div>
-                    <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                   
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="reviews-item">
-                    <div class="reviews-item__top">
-                      <div class="reviews-item__avatar"><img class="reviews-item__avatar-image" src="./img/avatar.png" alt="Имя и фамилия"></div>
-                      <div class="reviews-item__group">
-                        <div class="reviews-item__name">Имя и фамилия</div>
-                        <div class="reviews-item__status">Кто он</div>
+                    <div class="reviews-item_new_avatar"></div>
+                    <div class="reviews-item__text_wrp">
+                      <div class="reviews-item__top">
+                        <div class="reviews-item__group">
+                          <div class="reviews-item__name">Имя и фамилия</div>
+                          
+                        </div>
                       </div>
+                      <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </div>
                     </div>
-                    <div class="reviews-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                   
                   </div>
                 </div>
               </div>
@@ -2304,11 +2506,12 @@
               <div class="request__decoration request__decoration--mobile"><img class="request__decoration-image" src="./img/vocal-6.png" alt=""></div>
           <div class="request__form-main">
             <div class="request__date-time-group">
-              <label class="form-field"><img class="form-field__icon" src="./img/calendar.png" alt="">
-                <input class="form-field__input js-request-input-date" type="date">
+              <label class="form-field">
+                <img class="form-field__icon" src="./img/calendar.png" alt="">
+                <input class="form-field__input js-request-input-date">
               </label>
               <label class="form-field"><img class="form-field__icon" src="./img/clock.png" alt="">
-                <input class="form-field__input" type="number" placeholder="Время">
+                <input class="form-field__input form-field__input_time" placeholder="Время">
               </label>
             </div>
             <div class="form-field">
@@ -2420,6 +2623,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"></script>
     <script src="js/swiper-bundle.min.js" defer=""></script>
+    <script src="datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
     <script src="js/aos.js" defer=""></script>
     <!--// lightgallery-->
     <!--script(src='./js/lightGallary/lightgallery.min.js' defer='')-->
