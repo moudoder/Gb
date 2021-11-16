@@ -613,7 +613,7 @@
 }
 .about-us-item__stat-icon{
 	position: absolute;
-	max-width: 277px;
+	max-width: 265px;
 	width: auto;
 	height: auto;
 	left: 50%;
@@ -622,18 +622,19 @@
 
 	left: 74%;
     transform: translateX(-50%);
-    top: -93px;
+    top: -87px;
 }
 .about-us__item-1 .about-us-item__stat-icon{
 	left: 70%;
+
 }
 .about-us__item-2 .about-us-item__stat-icon{
 	left: 74%;
-	top: -109px;
+	top: -104px;
 }
 .about-us__item-3 .about-us-item__stat-icon{
-	top: -92px;
-	left: 68%;
+	top: -83px;
+	left: 67%;
 }
 
 
@@ -743,15 +744,15 @@
 }
 .reviews-item{
 	padding-left: 0;
-	
+	overflow: hidden;
 	background: #1E2841;
 	padding-top: 0;
 	padding-right: 0;
 }
 .reviews-item_new_avatar{
 	width: 100%;
-	height: 300px;
-	background: #030406;
+	height: 295px;
+	overflow: hidden;
 	margin-bottom: 30px;
 }
 .reviews-item__name{
@@ -784,6 +785,9 @@ td.xdsoft_current{
 }
 .footer{}
 @media (min-width: 1200px){
+	.footer__menu-item{
+		margin-bottom: 10px;
+	}
 	.consultation .consultation__button{
 		height: 81px;
 	}
@@ -820,6 +824,7 @@ td.xdsoft_current{
 	.portfolio-new-top-name {
 	    width: 83%;
 	}
+
 }
 @media (min-width: 500px) and (max-width: 1000px){
 	
@@ -898,6 +903,135 @@ td.xdsoft_current{
 	}
 }
 @media (max-width: 500px){
+	.first-screen__button {
+	    margin: 0 auto;
+	    max-width: 296px;
+	}
+	.your-voice .your-voice__button{
+		display: none;
+	}
+	.your-voice__subtitle {
+	    font-size: 11px;
+	    margin-bottom: 12px;
+	    max-width: 250px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.your-voice__item {
+	    max-width: 240px;
+	}
+	.your-voice__navigation{
+		top: -56%;
+	}
+	.your-voice__navigation-next {
+	    right: 20px;
+	}
+	.process__text{
+		max-width: 260px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.process__body{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.equipment .swiper-slide{
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+	.equipment__navigation--next {
+	    right: 20px;
+	}
+	.equipment__navigation--prev {
+	    left: 20px;
+	}
+	.comfort__title{
+		max-width: 230px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.comfort__group{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.certificate__container{
+		max-width: 328px;
+	}
+	.reviews-item_new_avatar{
+		height: 213px!important;
+	}
+	.articles__carousel-inner {
+	    padding: 0 calc((100% - 240px)/ 2);
+	}
+	.articles-item {
+	    width: 230px;
+	}
+	.articles__navigation-prev{
+		left: 20px;
+		right: auto;
+	}
+	.articles__navigation-next{
+		right: 20px;
+		left: auto;
+	}
+	.consultation__subtitle{
+		max-width: 240px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.contacts__cloud{
+		bottom: 30%;
+	}
+	.faq .container{
+		max-width: 340px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.tariffs__panels-group{
+		max-width: 300px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.comfort__subtitle{
+		max-width: 260px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.promotion__text{
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 280px;
+	}
+	.promotion__body{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.process__text-paragraph {
+	    margin-bottom: 20px;
+	}
+	.your-voice__navigation-prev {
+	    left: 20px;
+	}
+	.btn--base:before{
+		bottom: -4px;
+		background: #bc135a;
+	}
+	.first-screen__button .btn{
+		padding: 22px;
+	}
+	.first-screen__title{
+		font-size: 31px;
+	}
+	.branches .swiper-slide{
+		padding-right: 30px;
+		padding-left: 30px;
+
+	}
+	.services__content {
+	    max-width: 301px;
+	    margin: 0 auto;
+	    width: 100%;
+	}
 	.portfolio .audio-3__play{
 		opacity: 1;
 	}
