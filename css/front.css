@@ -1020,12 +1020,21 @@ td.xdsoft_current{
 		padding: 22px;
 	}
 	.first-screen__title{
-		font-size: 31px;
+		font-size: 34px;
+	}
+	.first-screen__descr{
+		font-size: 14px;
 	}
 	.branches .swiper-slide{
-		padding-right: 30px;
-		padding-left: 30px;
+		padding-right: 0px;
+		padding-left: 0px;
 
+	}
+	.branches .container{
+		max-width: 290px;
+	}
+	.branches .swiper-slide-active{
+		
 	}
 	.services__content {
 	    max-width: 301px;

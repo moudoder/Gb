@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 	// Открытие модального окна "полный список оборудывание"
+	new WOW().init();
+	
 	$('.equipment__download-text').on('click', function() {
 		$('.modal-equipment').addClass('modal-equipment-active');
 		return false;
@@ -71,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 	// Инициализациия AOS анимаций
-	AOS.init();
+	
 
 	var d = document;
 
