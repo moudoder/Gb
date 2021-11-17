@@ -730,7 +730,9 @@
 .articles-item__button:after{
 	display: none;
 }
-
+body{
+	overflow: hidden;
+}
 .portfolio-new_2{
 	max-height: 0;
 	overflow: hidden;
