@@ -757,6 +757,11 @@ body{
 	overflow: hidden;
 	margin-bottom: 30px;
 }
+.services *{
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;  
+}
 .reviews-item__name{
 	margin-bottom: 0;
 }
@@ -785,6 +790,49 @@ td.xdsoft_current{
 .services .your-voice__item-audio{
 	margin-top: -40px;
 }
+
+.first-screen__button{
+	overflow: hidden;
+	border-radius: 40px;
+}
+
+.animate {
+    left: -130px!important;
+}
+
+.animate {
+    webkit-animation: ripple 3s linear infinite;
+    -webkit-animation: ripple 3s linear infinite;
+    animation: ripple 3s linear infinite;
+    animation-duration: 2s;
+}
+
+.ink {
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    z-index: 20;
+}
+.advantages-block-wrapper{
+	position: relative;
+	overflow: hidden;
+}
+@keyframes ripple {
+ 80% {
+     opacity: 0;
+     -webkit-transform: scale(2.5);
+     transform: scale(2.5);
+ }
+ 100% {
+     opacity: 0;
+     -webkit-transform: scale(2.5);
+     transform: scale(2.5);
+ }
+}
+
 .footer{}
 @media (min-width: 1200px){
 	.first-screen__list-elem{
@@ -912,6 +960,35 @@ td.xdsoft_current{
 	}
 }
 @media (max-width: 500px){
+	.first-screen__bg{
+		top: -96px;
+	}
+	.header__contacts-icon{
+		display: none;
+	}
+	.services .audio-3__play{
+		opacity: 1;
+		position: relative;
+	}
+	.services .audio-3__play-icon--play{
+		right: 0;
+	}
+	.your-voice .audio-3__play-icon--play{
+		right: 0;
+	}
+	.services__carousel-inner{
+		padding: 0 110px;
+	}
+	.services__navigation-next {
+	    right: 33px;
+	}
+	.services__navigation-prev {
+	    left: 33px;
+	}
+	.your-voice .audio-3__play{
+		opacity: 1;
+		position: relative;
+	}
 	.first-screen__button {
 	    margin: 0 auto;
 	    max-width: 296px;
