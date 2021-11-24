@@ -28,6 +28,15 @@
 	bottom: 0;
 	opacity: 1;
 }
+
+.your-voice .audio-3__play{
+	position: relative;
+	top: auto;right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 1;
+}
+
 .modal .btn--modal-form::before{
 	background: #BC135A;
 }
