@@ -21,7 +21,13 @@
 
    
 }
-
+.services .audio-3__play{
+	position: relative;
+	top: auto;right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 1;
+}
 .modal .btn--modal-form::before{
 	background: #BC135A;
 }
@@ -667,7 +673,27 @@
 	padding-top: 1px;
 }
 .contacts__map_script{
-	opacity: .8;
+	position: relative;
+}
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+}
+.contacts__map_wht{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	mix-blend-mode: difference;
+	pointer-events: none;
+	background: #fff;
 }
 .footer__phone{
 	padding-right: 12%;
