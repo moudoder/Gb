@@ -2,6 +2,17 @@ document.addEventListener("DOMContentLoaded", function() {
 	// Открытие модального окна "полный список оборудывание"
 	new WOW().init();
 	
+
+	$(".scrol-to").on("click", function (event) {
+	  event.preventDefault();
+	  $('.header__nav-mobile').removeClass('header__nav-mobile--active');
+	  let id  = $(this).attr('href'),
+	  top = $(id).offset().top;
+	  $('body,html').animate({scrollTop: top}, 1500);
+	});
+
+	$(".phone").mask("+7 (999) 999-9999");
+
 	$('.equipment__download-text').on('click', function() {
 		$('.modal-equipment').addClass('modal-equipment-active');
 		return false;

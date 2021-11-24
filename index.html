@@ -75,10 +75,10 @@
           <!-- Навигация-->
           <nav class="header__nav">
             <ul class="header__nav-list">
-              <li class="header__nav-list-item"><a class="header__nav-list-link" href="#">Наши работы</a></li>
-              <li class="header__nav-list-item"><a class="header__nav-list-link" href="#">Фото галерея</a></li>
-              <li class="header__nav-list-item"><a class="header__nav-list-link" href="#">Тарифы</a></li>
-              <li class="header__nav-list-item"><a class="header__nav-list-link" href="#">Отзывы</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-list-link scrol-to" href="#sec1">Наши работы</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-list-link scrol-to" href="#sec2">Фото галерея</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-list-link scrol-to" href="#sec3">Тарифы</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-list-link scrol-to" href="#sec4">Отзывы</a></li>
             </ul>
           </nav>
           </div>
@@ -112,17 +112,17 @@
           <!-- Мобильная навигация-->
           <nav>
             <ul>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Кейсы</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a class="scrol-to" href="#sec1">Главная</a></li>
+              <li><a class="scrol-to" href="#sec6">Кейсы</a></li>
+              <li><a class="scrol-to" href="#sec4">Отзывы</a></li>
+              <li><a class="scrol-to" href="#sec5">Контакты</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
     <!-- Первый экарн-->
-    <div class="first-screen">
+    <div class="first-screen" id="sec1">
       <div class="first-screen__bg">
         <!-- source(srcset='img/first-screen-background.webp' type='image/webp')-->
         <!--img(src='./img/first-screen-background.png' alt='Бэграунд' title='Бэграунд').first-screen__bg-image-->
@@ -1107,7 +1107,7 @@
         -->
       </div>
     </div>
-    <div class="your-voice">
+    <div class="your-voice" id="sec6">
       <div class="container wow fadeInRight" data-aos="fade-left" data-aos-duration="800">
         <div class="your-voice__container">
           <div class="your-voice__body">
@@ -1352,7 +1352,7 @@
             <div class="process__decoration"><img class="process__decoration-image" src="./img/vocal-3.png" alt=""></div>
       </div>
     </div>
-    <div class="gallery">
+    <div class="gallery" id="sec2">
       <!-- TODO: lightGallery-->
       <div class="container wow fadeInUp" data-aos="zoom-in" data-aos-duration="800">
         <h2 class="gallery__title">Используем только профессиональное<br>оборудование</h2>
@@ -1706,7 +1706,7 @@
         </div>
       </div>
     </div>
-    <div class="tariffs">
+    <div class="tariffs" id="sec3">
       <div class="container wow fadeInRight" data-aos="zoom-in" data-aos-duration="800">
         <h2 class="tariffs__title">Выберите свой тариф</h2>
         <div class="tariffs__subtitle">У нас найдется место каждому музыканту, под любой бюджет</div>
@@ -2342,7 +2342,7 @@
         </div>
       </div>
     </div>
-    <div class="reviews">
+    <div class="reviews" id="sec4">
       <div class="reviews__planet"><img class="reviews__planet-image" src="./img/planet-4.png" alt=""></div>
       <div class="container reviews__container wow fadeInLeft" data-aos="fade-left" data-aos-duration="800">
         <h2 class="reviews__title">Отзывы о нашей студии</h2>
@@ -2510,7 +2510,7 @@
             <svg class="consultation-input__icon">
               <use xlink:href="./img/phone.svg#phone"></use>
             </svg>
-            <input class="consultation-input__input" type="text" name="phone-1" placeholder="Введите свой номер телефона">
+            <input class="consultation-input__input phone" type="text" name="phone-1" placeholder="Введите свой номер телефона">
           </div>
           <button class="btn btn--base consultation__button">Рассчитать стоимость<span class="btn__accent"></span></button>
         </form>
@@ -2537,14 +2537,14 @@
               <svg class="form-field__icon form-field__icon--phone">
                 <use xlink:href="./img/phone.svg#phone"></use>
               </svg>
-              <input class="form-field__input" type="number" placeholder="Введите номер телефона">
+              <input class="form-field__input phone" type="number" placeholder="Введите номер телефона">
             </div>
             <button class="btn btn--base request__form-button">Отправить заявку<span class="btn__accent"></span></button>
           </div>
         </form>
       </div>
     </div>
-    <div class="contacts">
+    <div class="contacts" id="sec5">
       <div class="container">
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__map">
@@ -2622,7 +2622,7 @@
         <p class="modal-window__descr">И мы перезвоним вам в течении 5 минут</p>
         <form class="modal-window__form" action="#">
           <input class="modal-window__form-input" type="text" name="name" placeholder="Имя">
-          <input class="modal-window__form-input" type="text" name="phone" placeholder="Телефон">
+          <input class="modal-window__form-input phone" type="text" name="phone" placeholder="Телефон">
           <button class="btn btn--base btn--modal-form" type="submit">Оставьте заявку<span class="btn__accent"></span></button>
           <p class="modal-window__pol">
             Нажимая  кнопку отправить, вы принимаете условия<br> <a href="">пользовательского соглашения.</a>
@@ -2658,6 +2658,9 @@
     <!--script(src='https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js' defer='')-->
     <!--script(src='./js/video.js' defer='')-->
     <!--script(src='./js/quiz.js' defer='')-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="js/custom-player.js" defer=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/app.js" defer=""></script>

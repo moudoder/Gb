@@ -19,7 +19,7 @@
 .modal-window--order{
 	
 
-    transform: none;
+   
 }
 
 .modal .btn--modal-form::before{
@@ -1053,6 +1053,12 @@ td.xdsoft_current{
 	.ink{
 		z-index: 2;
 	}
+	.first-screen__button{
+		border-radius: 0;
+	}
+	.first-screen__button .btn{
+		border-radius: 36px;
+	}
 	.btn--modal-form {
 	    width: 270px;
 	    text-transform: none;
@@ -1064,6 +1070,7 @@ td.xdsoft_current{
 	}
 	.first-screen__button .btn{
 		padding: 24px!important;
+		overflow: hidden;
 	}
 	.btn--modal-form::before{
 		border-radius: 57.49px;
